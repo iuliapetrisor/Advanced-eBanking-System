@@ -1,4 +1,4 @@
-package org.poo.bankSystem;
+package org.poo.banksystem;
 
 public class SavingsAccount extends Account {
     private double interestRate = 0.0;
@@ -6,13 +6,13 @@ public class SavingsAccount extends Account {
     /**
      * Constructor for the SavingsAccount class.
      *
-     * @param IBAN         the IBAN of the account
+     * @param iban         the iban of the account
      * @param balance      the balance of the account
      * @param currency     the currency of the account
      */
-    public SavingsAccount(final String IBAN, final double balance,
+    public SavingsAccount(final String iban, final double balance,
                           final String currency, final double interestRate) {
-        super(IBAN, balance, currency, "savings");
+        super(iban, balance, currency, "savings");
         this.interestRate = interestRate;
     }
 

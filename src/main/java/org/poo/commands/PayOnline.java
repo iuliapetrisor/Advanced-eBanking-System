@@ -3,32 +3,36 @@ package org.poo.commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.poo.bankSystem.Account;
-import org.poo.bankSystem.Card;
-import org.poo.bankSystem.User;
-import org.poo.bankSystem.ExchangeRateManager;
+import org.poo.banksystem.Account;
+import org.poo.banksystem.Card;
+import org.poo.banksystem.Commerciant;
+import org.poo.banksystem.ExchangeRateManager;
+import org.poo.banksystem.User;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.Transaction;
 import org.poo.transactions.TransactionManager;
 import org.poo.utils.Utils;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.List;
 
 public class PayOnline implements Command {
     private final List<User> users;
+    private List<Commerciant> commerciants;
     private final ExchangeRateManager exchangeRateManager;
     private final TransactionManager transactionManager;
 
     /**
      * Constructor for PayOnline.
      * @param users the users
+     * @param commerciants the commerciants
      * @param exchangeRateManager the exchange rate manager
+     * @param transactionManager the transaction manager
      */
-    public PayOnline(final List<User> users, final ExchangeRateManager exchangeRateManager,
+    public PayOnline(final List<User> users,
+                     final List<Commerciant> commerciants,
+                     final ExchangeRateManager exchangeRateManager,
                      final TransactionManager transactionManager) {
         this.users = users;
+        this.commerciants = commerciants;
         this.exchangeRateManager = exchangeRateManager;
         this.transactionManager = transactionManager;
     }
@@ -47,20 +51,17 @@ public class PayOnline implements Command {
                 for (Account account : user.getAccounts()) {
                     for (Card card : account.getCards()) {
                         if (card.getCardNumber().equals(command.getCardNumber())) {
+                            double amountInRon = exchangeRateManager.convert(
+                                    command.getAmount(), command.getCurrency(), "RON");
                             double amountInAccountCurrency = exchangeRateManager.convert(
                                     command.getAmount(), command.getCurrency(),
-                                    account.getCurrency()
-                            );
-
-//                            BigDecimal amountBD = BigDecimal.valueOf(amountInAccountCurrency)
-//                                    .setScale(ExchangeRateManager.SCALE_PRECISION,
-//                                            RoundingMode.HALF_UP);
+                                    account.getCurrency());
 
                             if (account.getBalance() >=  amountInAccountCurrency && card.isActive()
                                     && account.getBalance() - amountInAccountCurrency
                                     >= account.getMinBalance()) {
                                 account.pay(amountInAccountCurrency);
-
+                                account.pay(account.getTransactionFee(amountInAccountCurrency));
                                 Transaction transaction = new Transaction.Builder()
                                         .timestamp(command.getTimestamp())
                                         .description("Card payment")
@@ -72,6 +73,17 @@ public class PayOnline implements Command {
                                 transactionManager.addTransactionToAccount(command.getEmail(),
                                         account.getIBAN(), transaction);
 
+                                Commerciant commerciant = findCommerciantByName(command
+                                        .getCommerciant());
+                                if (commerciant == null) {
+                                    return;
+                                }
+                                double cashback = account
+                                        .processTransactionStrategy(amountInAccountCurrency,
+                                        amountInRon, commerciant.getCashbackStrategyName());
+                                if (cashback > 0) {
+                                    account.addFunds(cashback);
+                                }
                                 if (card.isOneTime()) {
                                     transaction = new Transaction.Builder()
                                             .timestamp(command.getTimestamp())
@@ -156,5 +168,14 @@ public class PayOnline implements Command {
                 return;
             }
         }
+    }
+
+    private Commerciant findCommerciantByName(final String name) {
+        for (Commerciant commerciant : commerciants) {
+            if (commerciant.getName().equals(name)) {
+                return commerciant;
+            }
+        }
+        return null;
     }
 }

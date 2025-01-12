@@ -130,7 +130,7 @@
     "email" : "Rada_Nita@gmail.ro",
     "accounts" : [ {
       "IBAN" : "RO69POOB6209498372540635",
-      "balance" : 896.0,
+      "balance" : 896.856,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {

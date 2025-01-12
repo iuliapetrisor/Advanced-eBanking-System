@@ -1,4 +1,4 @@
-package org.poo.bankSystem;
+package org.poo.banksystem;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -22,6 +22,7 @@ import org.poo.commands.SpendingsReport;
 import org.poo.commands.AddInterest;
 import org.poo.commands.ChangeInterestRate;
 import org.poo.commands.WithdrawSavings;
+import org.poo.fileio.CommerciantInput;
 import org.poo.transactions.TransactionManager;
 import org.poo.fileio.CommandInput;
 import org.poo.fileio.ObjectInput;
@@ -32,6 +33,7 @@ import java.util.List;
 public class Bank {
     private ObjectMapper objectMapper;
     private List<User> users = new ArrayList<>();
+    private List<Commerciant> commerciants = new ArrayList<>();
     private CommandInput[] commands;
     private final ExchangeRateManager exchangeRateManager;
     private PrintUsers printUsers;
@@ -65,6 +67,9 @@ public class Bank {
         for (UserInput userInput : inputData.getUsers()) {
             users.add(new User(userInput));
         }
+        for (CommerciantInput commerciantInput : inputData.getCommerciants()) {
+            commerciants.add(new Commerciant(commerciantInput));
+        }
         commands = inputData.getCommands();
         this.objectMapper = objectMapper;
         this.exchangeRateManager = new ExchangeRateManager(inputData.getExchangeRates());
@@ -83,7 +88,7 @@ public class Bank {
         deleteAccount = new DeleteAccount(users, transactionManager);
         createOneTimeCard = new CreateOneTimeCard(users, transactionManager);
         deleteCard = new DeleteCard(users, transactionManager);
-        payOnline = new PayOnline(users, exchangeRateManager, transactionManager);
+        payOnline = new PayOnline(users, commerciants, exchangeRateManager, transactionManager);
         sendMoney = new SendMoney(users, exchangeRateManager, transactionManager);
         printTransactions = new PrintTransactions(users);
         setMinBalance = new SetMinBalance(users);

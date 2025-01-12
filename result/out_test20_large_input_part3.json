@@ -1778,7 +1778,7 @@
     "email" : "Heather_Sheppard@hotmail.ch",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 1498.4,
+      "balance" : 1498.3868,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -1792,7 +1792,7 @@
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 22268.0,
+      "balance" : 22377.375,
       "currency" : "INR",
       "type" : "classic",
       "cards" : [ {
@@ -1806,7 +1806,7 @@
     "email" : "Alfredo_Esquivel@aol.mx",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 1331.0,
+      "balance" : 1330.964,
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
@@ -1834,7 +1834,7 @@
     "email" : "Phillip_Graves@yandex.au",
     "accounts" : [ {
       "IBAN" : "RO19POOB4981055641668812",
-      "balance" : 1222.0,
+      "balance" : 1221.96,
       "currency" : "AUD",
       "type" : "classic",
       "cards" : [ {
@@ -1848,7 +1848,7 @@
     "email" : "Emilio_Camiscione-Rugger@hushmail.it",
     "accounts" : [ {
       "IBAN" : "RO30POOB9523423715747796",
-      "balance" : 1784.4615384615386,
+      "balance" : 1784.4504615384615,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1862,7 +1862,7 @@
     "email" : "Frank_Carey@gmail.gb",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1607.6868686868688,
+      "balance" : 1607.6608686868688,
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
@@ -2595,7 +2595,7 @@
   "timestamp" : 851,
   "output" : {
     "IBAN" : "RO65POOB8944016386845896",
-    "balance" : 1498.4,
+    "balance" : 1498.3868,
     "currency" : "CHF",
     "transactions" : [ {
       "timestamp" : 632,
@@ -2712,7 +2712,7 @@
     "email" : "Heather_Sheppard@hotmail.ch",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 1498.4,
+      "balance" : 1498.3868,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -2726,7 +2726,7 @@
     "email" : "Zilmil_Kala@hushmail.in",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 22268.0,
+      "balance" : 22377.375,
       "currency" : "INR",
       "type" : "classic",
       "cards" : [ {
@@ -2740,7 +2740,7 @@
     "email" : "Alfredo_Esquivel@aol.mx",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 1331.0,
+      "balance" : 1330.964,
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
@@ -2768,7 +2768,7 @@
     "email" : "Phillip_Graves@yandex.au",
     "accounts" : [ {
       "IBAN" : "RO19POOB4981055641668812",
-      "balance" : 1222.0,
+      "balance" : 1221.96,
       "currency" : "AUD",
       "type" : "classic",
       "cards" : [ {
@@ -2782,7 +2782,7 @@
     "email" : "Emilio_Camiscione-Rugger@hushmail.it",
     "accounts" : [ {
       "IBAN" : "RO30POOB9523423715747796",
-      "balance" : 1784.4615384615386,
+      "balance" : 1784.4504615384615,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -2796,7 +2796,7 @@
     "email" : "Frank_Carey@gmail.gb",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1607.6868686868688,
+      "balance" : 1607.6608686868688,
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {

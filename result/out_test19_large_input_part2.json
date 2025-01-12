@@ -47,7 +47,7 @@
     "email" : "Marvin_Peterson@zoho.ch",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 1076.0625,
+      "balance" : 1076.212375,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -89,7 +89,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 239.8461538461538,
+      "balance" : 239.98523076923075,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
@@ -243,7 +243,7 @@
     "email" : "Isabel_Grande_Sales@hotmail.es",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 226.0,
+      "balance" : 227.11,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1048,7 +1048,7 @@
     "email" : "Marvin_Peterson@zoho.ch",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 621.9375,
+      "balance" : 622.0873750000001,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -1099,7 +1099,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 239.8461538461538,
+      "balance" : 239.98523076923075,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
@@ -1271,7 +1271,7 @@
     "email" : "Isabel_Grande_Sales@hotmail.es",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 786.1818181818185,
+      "balance" : 787.2918181818185,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1594,7 +1594,7 @@
     "email" : "Marvin_Peterson@zoho.ch",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 621.9375,
+      "balance" : 622.0873750000001,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -1645,7 +1645,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 239.8461538461538,
+      "balance" : 239.98523076923075,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
@@ -1817,7 +1817,7 @@
     "email" : "Isabel_Grande_Sales@hotmail.es",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 786.1818181818185,
+      "balance" : 787.2918181818185,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -2324,7 +2324,7 @@
     "email" : "Marvin_Peterson@zoho.ch",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 621.9375,
+      "balance" : 622.0873750000001,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -2369,7 +2369,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 239.8461538461538,
+      "balance" : 239.98523076923075,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ ]
@@ -2508,7 +2508,7 @@
     "email" : "Isabel_Grande_Sales@hotmail.es",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 786.1818181818185,
+      "balance" : 787.2918181818185,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -3102,7 +3102,7 @@
     "email" : "Marvin_Peterson@zoho.ch",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 621.9375,
+      "balance" : 622.0873750000001,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -3147,7 +3147,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 239.8461538461538,
+      "balance" : 239.98523076923075,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ ]
@@ -3286,7 +3286,7 @@
     "email" : "Isabel_Grande_Sales@hotmail.es",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 786.1818181818185,
+      "balance" : 787.2918181818185,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -3326,7 +3326,7 @@
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1189.0921714285714,
+      "balance" : 1189.1027314285714,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -3656,7 +3656,7 @@
     "email" : "Marvin_Peterson@zoho.ch",
     "accounts" : [ {
       "IBAN" : "RO90POOB5450777208072365",
-      "balance" : 621.9375,
+      "balance" : 622.0873750000001,
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
@@ -3701,7 +3701,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 239.8461538461538,
+      "balance" : 239.98523076923075,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ ]
@@ -3840,7 +3840,7 @@
     "email" : "Isabel_Grande_Sales@hotmail.es",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 786.1818181818185,
+      "balance" : 787.2918181818185,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -3880,7 +3880,7 @@
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1189.0921714285714,
+      "balance" : 1189.1027314285714,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -4174,7 +4174,7 @@
   "timestamp" : 1029,
   "output" : {
     "IBAN" : "RO90POOB5450777208072365",
-    "balance" : 621.9375,
+    "balance" : 622.0873750000001,
     "currency" : "CHF",
     "transactions" : [ {
       "timestamp" : 287,
@@ -4212,7 +4212,7 @@
   "timestamp" : 1032,
   "output" : {
     "IBAN" : "RO76POOB4035116042454483",
-    "balance" : 239.8461538461538,
+    "balance" : 239.98523076923075,
     "currency" : "NZD",
     "transactions" : [ {
       "timestamp" : 292,
@@ -4330,7 +4330,7 @@
   "timestamp" : 1043,
   "output" : {
     "IBAN" : "RO68POOB1848616931405475",
-    "balance" : 786.1818181818185,
+    "balance" : 787.2918181818185,
     "currency" : "EUR",
     "transactions" : [ {
       "timestamp" : 288,

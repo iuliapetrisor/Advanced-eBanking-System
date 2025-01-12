@@ -1,4 +1,4 @@
-package org.poo.bankSystem;
+package org.poo.banksystem;
 
 import org.poo.fileio.UserInput;
 import org.poo.transactions.Transaction;
@@ -165,12 +165,19 @@ public class User {
      */
     public int getAge() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate birthDate = LocalDate.parse(this.birthDate, formatter);
-        LocalDate currentDate = LocalDate.of(2025, 1, 1);
-        return Period.between(birthDate, currentDate).getYears();
+        LocalDate parsedBirthDate = LocalDate.parse(this.birthDate, formatter);
+        LocalDate currentDate = LocalDate.now();
+        return Period.between(parsedBirthDate, currentDate).getYears();
     }
 
-    public Account getFirstClassicAccountInCurrency(String currency) {
+    /**
+     * Gets the first classic account in the specified currency
+     * (used for the withdrawSavings command).
+     *
+     * @param currency the currency
+     * @return the first classic account in the specified currency
+     */
+    public Account getFirstClassicAccountInCurrency(final String currency) {
         for (Account account : accounts) {
             if (account.getType().equals("classic") && account.getCurrency().equals(currency)) {
                 return account;
@@ -178,5 +185,13 @@ public class User {
         }
         return null;
     }
-}
 
+    /**
+     * Checks if the user is a student.
+     *
+     * @return true if the user is a student, false otherwise
+     */
+    public boolean isStudent() {
+        return occupation.equals("student");
+    }
+}

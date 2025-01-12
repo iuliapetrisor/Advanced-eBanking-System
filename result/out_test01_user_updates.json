@@ -216,7 +216,7 @@
     "email" : "Jessica_Chandler@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 328.8571428571429,
+      "balance" : 328.90128571428573,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -351,7 +351,7 @@
     "email" : "Jessica_Chandler@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 161.8571428571429,
+      "balance" : 161.90128571428573,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {

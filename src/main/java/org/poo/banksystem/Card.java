@@ -1,4 +1,4 @@
-package org.poo.bankSystem;
+package org.poo.banksystem;
 
 public class Card {
     private final String cardNumber;

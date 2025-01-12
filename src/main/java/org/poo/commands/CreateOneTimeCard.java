@@ -2,9 +2,9 @@ package org.poo.commands;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import org.poo.bankSystem.Account;
-import org.poo.bankSystem.Card;
-import org.poo.bankSystem.User;
+import org.poo.banksystem.Account;
+import org.poo.banksystem.Card;
+import org.poo.banksystem.User;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.Transaction;
 import org.poo.transactions.TransactionManager;

@@ -3,20 +3,20 @@ package org.poo.commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.poo.bankSystem.Account;
-import org.poo.bankSystem.ExchangeRateManager;
-import org.poo.bankSystem.User;
+import org.poo.banksystem.Account;
+import org.poo.banksystem.ExchangeRateManager;
+import org.poo.banksystem.User;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.Transaction;
 import org.poo.transactions.TransactionManager;
 
 import java.util.List;
 
-public class WithdrawSavings implements Command{
+public class WithdrawSavings implements Command {
     private final List<User> users;
     private final ExchangeRateManager exchangeRateManager;
     private final TransactionManager transactionManager;
-
+    public static final int MINIMUM_AGE = 21;
     /**
      * Constructor for WithdrawSavings.
      * @param users the users
@@ -36,8 +36,8 @@ public class WithdrawSavings implements Command{
      * @param output the output array
      */
     @Override
-    public void execute(CommandInput command, ObjectMapper objectMapper,
-                        ArrayNode output) {
+    public void execute(final CommandInput command, final ObjectMapper objectMapper,
+                        final ArrayNode output) {
         for (User user : users) {
             for (Account account : user.getAccounts()) {
                 if (account.getIBAN().equals(command.getAccount())) {
@@ -52,7 +52,7 @@ public class WithdrawSavings implements Command{
                         return;
                     }
 
-                    if(user.getAge() < 21) {
+                    if (user.getAge() < MINIMUM_AGE) {
                         Transaction transaction = new Transaction.Builder()
                                 .timestamp(command.getTimestamp())
                                 .description("You don't have the minimum age required.")
@@ -63,7 +63,8 @@ public class WithdrawSavings implements Command{
                         return;
                     }
 
-                    Account receiverAccount = user.getFirstClassicAccountInCurrency(command.getCurrency());
+                    Account receiverAccount = user.getFirstClassicAccountInCurrency(command
+                            .getCurrency());
 
                     if (receiverAccount == null) {
                         Transaction transaction = new Transaction.Builder()

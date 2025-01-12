@@ -1,4 +1,4 @@
-package org.poo.bankSystem;
+package org.poo.banksystem;
 
 import org.poo.fileio.ExchangeInput;
 
@@ -11,6 +11,7 @@ import java.util.Set;
 
 public class ExchangeRateManager {
     public static final int SCALE_PRECISION = 20;
+    public static final double EPSILON = 100000000000000.0;
     private final Map<String, Map<String, Double>> exchangeRates = new HashMap<>();
     /**
      * Constructor for ExchangeRateManager.
@@ -70,7 +71,7 @@ public class ExchangeRateManager {
             BigDecimal rateBD = BigDecimal.valueOf(exchangeRates.get(from).get(to));
             BigDecimal convertedAmount = amountBD.multiply(rateBD);
             return Math.round(convertedAmount.setScale(SCALE_PRECISION, RoundingMode.HALF_UP)
-                    .doubleValue() * 100000000000000.0) / 100000000000000.0;
+                    .doubleValue() * EPSILON) / EPSILON;
         }
         throw new IllegalArgumentException("Invalid conversion");
     }

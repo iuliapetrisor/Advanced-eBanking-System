@@ -1685,7 +1685,7 @@
       } ]
     }, {
       "IBAN" : "RO52POOB6271107854467609",
-      "balance" : 841.0,
+      "balance" : 841.6,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {

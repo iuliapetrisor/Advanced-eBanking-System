@@ -1,11 +1,11 @@
 package org.poo.commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import org.poo.bankSystem.Account;
-import org.poo.bankSystem.SavingsAccount;
+import org.poo.banksystem.Account;
+import org.poo.banksystem.SavingsAccount;
 import org.poo.fileio.CommandInput;
 
-import org.poo.bankSystem.User;
+import org.poo.banksystem.User;
 import org.poo.transactions.TransactionManager;
 import org.poo.transactions.Transaction;
 import org.poo.utils.Utils;
@@ -36,14 +36,19 @@ public class AddAccount implements Command {
                         final ArrayNode output) {
         for (User user : users) {
             if (user.getEmail().equals(command.getEmail())) {
-                String IBAN = Utils.generateIBAN();
+                String iban = Utils.generateIBAN();
                 Account account;
                 if (command.getAccountType().equals("savings")) {
-                    account = new SavingsAccount(IBAN, 0.0,
+                    account = new SavingsAccount(iban, 0.0,
                             command.getCurrency(), command.getInterestRate());
                 } else {
-                    account = new Account(IBAN, 0.0, command.getCurrency(),
+                    account = new Account(iban, 0.0, command.getCurrency(),
                             command.getAccountType());
+                }
+                if (user.isStudent()) {
+                    account.setPlanType("student");
+                } else {
+                    account.setPlanType("standard");
                 }
                 user.addAccount(account);
                 Transaction transaction = new Transaction.Builder()

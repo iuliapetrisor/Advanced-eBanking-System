@@ -3,9 +3,9 @@ package org.poo.commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.poo.bankSystem.Account;
-import org.poo.bankSystem.SavingsAccount;
-import org.poo.bankSystem.User;
+import org.poo.banksystem.Account;
+import org.poo.banksystem.SavingsAccount;
+import org.poo.banksystem.User;
 import org.poo.fileio.CommandInput;
 
 import java.util.List;
@@ -47,10 +47,10 @@ public class AddInterest implements Command {
         }
     }
 
-    private Account findAccountByIBAN(final String IBAN) {
+    private Account findAccountByIBAN(final String iban) {
         for (User user : users) {
             for (Account account : user.getAccounts()) {
-                if (account.getIBAN().equals(IBAN)) {
+                if (account.getIBAN().equals(iban)) {
                     return account;
                 }
             }

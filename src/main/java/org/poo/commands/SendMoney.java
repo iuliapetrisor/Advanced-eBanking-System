@@ -2,15 +2,13 @@ package org.poo.commands;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import org.poo.bankSystem.Account;
-import org.poo.bankSystem.User;
-import org.poo.bankSystem.ExchangeRateManager;
+import org.poo.banksystem.Account;
+import org.poo.banksystem.User;
+import org.poo.banksystem.ExchangeRateManager;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.Transaction;
 import org.poo.transactions.TransactionManager;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.List;
 
 public class SendMoney implements Command {

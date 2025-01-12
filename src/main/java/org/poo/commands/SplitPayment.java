@@ -3,9 +3,9 @@ package org.poo.commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.poo.bankSystem.Account;
-import org.poo.bankSystem.User;
-import org.poo.bankSystem.ExchangeRateManager;
+import org.poo.banksystem.Account;
+import org.poo.banksystem.User;
+import org.poo.banksystem.ExchangeRateManager;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.Transaction;
 import org.poo.transactions.TransactionManager;
@@ -106,10 +106,10 @@ public class SplitPayment implements Command {
         }
     }
 
-    private Account findAccountByIBAN(final String IBAN) {
+    private Account findAccountByIBAN(final String iban) {
         for (User user : users) {
             for (Account account : user.getAccounts()) {
-                if (account.getIBAN().equals(IBAN)) {
+                if (account.getIBAN().equals(iban)) {
                     return account;
                 }
             }

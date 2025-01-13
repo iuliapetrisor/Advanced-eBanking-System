@@ -34,13 +34,33 @@
     "timestamp" : 523
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 527,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 527
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 532,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 532
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 545,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 545
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 555,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 555
+  }
 }, {
   "error" : "Account not found",
   "timestamp" : 560
@@ -1230,7 +1250,12 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 703,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 703
+  }
 }, {
   "command" : "printUsers",
   "timestamp" : 704,

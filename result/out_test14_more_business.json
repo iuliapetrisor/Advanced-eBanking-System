@@ -11,9 +11,19 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 79,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 79
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 80,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 80
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 81,

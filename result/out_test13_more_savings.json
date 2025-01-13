@@ -1,13 +1,38 @@
 [ {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 64,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 64
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 65,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 65
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 66,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 66
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 67,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 67
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 68,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 68
+  }
 }, {
   "command" : "deleteAccount",
   "timestamp" : 200,
@@ -1709,7 +1734,12 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 540,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 540
+  }
 }, {
   "command" : "printTransactions",
   "timestamp" : 541,
@@ -1761,7 +1791,12 @@
     "transferType" : "received"
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 543,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 543
+  }
 }, {
   "command" : "printTransactions",
   "timestamp" : 544,
@@ -1795,7 +1830,12 @@
     "transferType" : "received"
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 546,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 546
+  }
 }, {
   "command" : "printTransactions",
   "timestamp" : 547,

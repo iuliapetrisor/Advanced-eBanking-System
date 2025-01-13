@@ -1,15 +1,10 @@
 [ {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 291,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 291
+  }
 }, {
   "command" : "printUsers",
   "timestamp" : 314,
@@ -51,7 +46,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     } ]
@@ -61,11 +56,11 @@
     "email" : "Alwin_Dowerg@yandex.de",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 821.0,
+      "balance" : 806.1704,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6796819982034243",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -159,7 +154,7 @@
     "email" : "Dott._Arsenio_Bellucc@mail.com.it",
     "accounts" : [ {
       "IBAN" : "RO00POOB5687892910835215",
-      "balance" : 1301.0,
+      "balance" : 1159.9184,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -215,11 +210,11 @@
     "email" : "Rene_Plourde@protonmail.ca",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 749.0,
+      "balance" : 747.2632,
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0084627535411906",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     } ]
@@ -247,7 +242,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -271,11 +266,11 @@
     "email" : "Iris_Sanders-Kramer@outlook.nl",
     "accounts" : [ {
       "IBAN" : "RO33POOB9999273999620457",
-      "balance" : 1408.0,
+      "balance" : 1271.1999999999998,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6467982927008637",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     } ]
@@ -442,7 +437,7 @@
     "timestamp" : 287,
     "description" : "New card created",
     "account" : "RO90POOB5450777208072365",
-    "card" : "8916302128573242",
+    "card" : "4097439592846732",
     "cardHolder" : "Marvin_Peterson@zoho.ch"
   }, {
     "timestamp" : 317,
@@ -479,6 +474,21 @@
     "description" : "New card created",
     "account" : "RO65POOB8944016386845896",
     "card" : "6796819982034243",
+    "cardHolder" : "Alwin_Dowerg@yandex.de"
+  }, {
+    "timestamp" : 286,
+    "description" : "Cash withdrawal of 74.0"
+  }, {
+    "timestamp" : 286,
+    "description" : "The card has been destroyed",
+    "account" : "RO65POOB8944016386845896",
+    "card" : "6796819982034243",
+    "cardHolder" : "Alwin_Dowerg@yandex.de"
+  }, {
+    "timestamp" : 286,
+    "description" : "New card created",
+    "account" : "RO65POOB8944016386845896",
+    "card" : "8696843716078966",
     "cardHolder" : "Alwin_Dowerg@yandex.de"
   }, {
     "timestamp" : 320,
@@ -654,6 +664,9 @@
     "card" : "8431794639822740",
     "cardHolder" : "Dott._Arsenio_Bellucc@mail.com.it"
   }, {
+    "timestamp" : 284,
+    "description" : "Cash withdrawal of 704.0"
+  }, {
     "timestamp" : 320,
     "description" : "Split payment of 11252.10 EUR",
     "amount" : 562.605,
@@ -749,6 +762,21 @@
     "card" : "0084627535411906",
     "cardHolder" : "Rene_Plourde@protonmail.ca"
   }, {
+    "timestamp" : 290,
+    "description" : "Cash withdrawal of 6.0"
+  }, {
+    "timestamp" : 290,
+    "description" : "The card has been destroyed",
+    "account" : "RO98POOB8412955460158769",
+    "card" : "0084627535411906",
+    "cardHolder" : "Rene_Plourde@protonmail.ca"
+  }, {
+    "timestamp" : 290,
+    "description" : "New card created",
+    "account" : "RO98POOB8412955460158769",
+    "card" : "5069598921863529",
+    "cardHolder" : "Rene_Plourde@protonmail.ca"
+  }, {
     "timestamp" : 320,
     "description" : "Split payment of 11252.10 EUR",
     "amount" : 562.605,
@@ -770,6 +798,9 @@
     "account" : "RO32POOB0130532963818359",
     "card" : "8509650399173661",
     "cardHolder" : "Harrison_Iyengar@outlook.in"
+  }, {
+    "timestamp" : 289,
+    "description" : "Insufficient funds"
   }, {
     "timestamp" : 320,
     "description" : "Split payment of 11252.10 EUR",
@@ -807,7 +838,7 @@
     "timestamp" : 288,
     "description" : "New card created",
     "account" : "RO68POOB1848616931405475",
-    "card" : "8696843716078966",
+    "card" : "2289183361654620",
     "cardHolder" : "Isabel_Grande_Sales@hotmail.es"
   }, {
     "timestamp" : 315,
@@ -869,6 +900,21 @@
     "description" : "New card created",
     "account" : "RO33POOB9999273999620457",
     "card" : "6467982927008637",
+    "cardHolder" : "Iris_Sanders-Kramer@outlook.nl"
+  }, {
+    "timestamp" : 285,
+    "description" : "Cash withdrawal of 684.0"
+  }, {
+    "timestamp" : 285,
+    "description" : "The card has been destroyed",
+    "account" : "RO33POOB9999273999620457",
+    "card" : "6467982927008637",
+    "cardHolder" : "Iris_Sanders-Kramer@outlook.nl"
+  }, {
+    "timestamp" : 285,
+    "description" : "New card created",
+    "account" : "RO33POOB9999273999620457",
+    "card" : "8916302128573242",
     "cardHolder" : "Iris_Sanders-Kramer@outlook.nl"
   }, {
     "timestamp" : 315,
@@ -962,7 +1008,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     } ]
@@ -972,11 +1018,11 @@
     "email" : "Alwin_Dowerg@yandex.de",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 751.0,
+      "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6796819982034243",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -999,7 +1045,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     } ]
@@ -1079,7 +1125,7 @@
     "email" : "Dott._Arsenio_Bellucc@mail.com.it",
     "accounts" : [ {
       "IBAN" : "RO00POOB5687892910835215",
-      "balance" : 1231.0,
+      "balance" : 1089.9184,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1120,7 +1166,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -1143,7 +1189,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     } ]
@@ -1153,11 +1199,11 @@
     "email" : "Rene_Plourde@protonmail.ca",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 647.8888888888888,
+      "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0084627535411906",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     } ]
@@ -1185,7 +1231,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -1209,11 +1255,11 @@
     "email" : "Iris_Sanders-Kramer@outlook.nl",
     "accounts" : [ {
       "IBAN" : "RO33POOB9999273999620457",
-      "balance" : 1561.6000000000001,
+      "balance" : 1424.8,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6467982927008637",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     }, {
@@ -1222,7 +1268,7 @@
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     } ]
@@ -1250,7 +1296,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     }, {
@@ -1259,7 +1305,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -1273,7 +1319,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -1287,7 +1333,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     } ]
@@ -1301,7 +1347,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1315,7 +1361,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -1329,7 +1375,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -1343,7 +1389,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -1357,7 +1403,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -1371,7 +1417,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -1385,7 +1431,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -1399,7 +1445,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -1413,7 +1459,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -1427,7 +1473,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -1441,7 +1487,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -1455,7 +1501,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -1508,7 +1554,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     } ]
@@ -1518,11 +1564,11 @@
     "email" : "Alwin_Dowerg@yandex.de",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 751.0,
+      "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6796819982034243",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -1545,7 +1591,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     } ]
@@ -1625,7 +1671,7 @@
     "email" : "Dott._Arsenio_Bellucc@mail.com.it",
     "accounts" : [ {
       "IBAN" : "RO00POOB5687892910835215",
-      "balance" : 1231.0,
+      "balance" : 1089.9184,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1666,7 +1712,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -1689,7 +1735,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     } ]
@@ -1699,11 +1745,11 @@
     "email" : "Rene_Plourde@protonmail.ca",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 647.8888888888888,
+      "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0084627535411906",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     } ]
@@ -1731,7 +1777,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -1755,11 +1801,11 @@
     "email" : "Iris_Sanders-Kramer@outlook.nl",
     "accounts" : [ {
       "IBAN" : "RO33POOB9999273999620457",
-      "balance" : 1556.097142857143,
+      "balance" : 1419.2971428571427,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6467982927008637",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     }, {
@@ -1768,7 +1814,7 @@
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     } ]
@@ -1796,7 +1842,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     }, {
@@ -1805,7 +1851,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -1819,7 +1865,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -1833,7 +1879,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     } ]
@@ -1847,7 +1893,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1861,7 +1907,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -1875,7 +1921,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -1889,7 +1935,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -1903,7 +1949,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -1917,7 +1963,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -1931,7 +1977,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -1945,7 +1991,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -1959,7 +2005,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -1973,7 +2019,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -1987,7 +2033,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -2001,7 +2047,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -2140,17 +2186,47 @@
     "timestamp" : 759
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 805,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 805
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 806,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 806
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 807,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 807
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 808,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 808
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 809,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 809
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 810,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 810
+  }
 }, {
   "error" : "Invalid command"
 }, {
@@ -2206,7 +2282,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     } ]
@@ -2216,10 +2292,13 @@
     "email" : "Alwin_Dowerg@yandex.de",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 751.0,
+      "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "8696843716078966",
+        "status" : "active"
+      } ]
     } ]
   }, {
     "firstName" : "Angel",
@@ -2237,7 +2316,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     } ]
@@ -2302,7 +2381,7 @@
     "email" : "Dott._Arsenio_Bellucc@mail.com.it",
     "accounts" : [ {
       "IBAN" : "RO00POOB5687892910835215",
-      "balance" : 1231.0,
+      "balance" : 1089.9184,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ ]
@@ -2334,7 +2413,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -2354,7 +2433,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     } ]
@@ -2364,10 +2443,13 @@
     "email" : "Rene_Plourde@protonmail.ca",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 647.8888888888888,
+      "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "5069598921863529",
+        "status" : "active"
+      } ]
     } ]
   }, {
     "firstName" : "Harrison",
@@ -2390,7 +2472,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -2411,17 +2493,20 @@
     "email" : "Iris_Sanders-Kramer@outlook.nl",
     "accounts" : [ {
       "IBAN" : "RO33POOB9999273999620457",
-      "balance" : 1556.097142857143,
+      "balance" : 1419.2971428571427,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "8916302128573242",
+        "status" : "active"
+      } ]
     }, {
       "IBAN" : "RO93POOB6760303931698665",
       "balance" : 1641.8892,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     }, {
@@ -2430,7 +2515,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "9295697829422937",
         "status" : "active"
       } ]
     }, {
@@ -2439,7 +2524,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "8145060794847555",
         "status" : "active"
       } ]
     }, {
@@ -2448,7 +2533,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "2107645074675430",
         "status" : "active"
       } ]
     } ]
@@ -2473,7 +2558,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     }, {
@@ -2482,7 +2567,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -2496,7 +2581,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -2510,7 +2595,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     }, {
@@ -2536,7 +2621,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -2550,7 +2635,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -2564,7 +2649,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -2578,7 +2663,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -2592,7 +2677,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -2606,7 +2691,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -2620,7 +2705,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -2634,7 +2719,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -2648,7 +2733,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -2662,7 +2747,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -2676,7 +2761,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -2690,7 +2775,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -2705,6 +2790,76 @@
   "error" : "Invalid command"
 }, {
   "error" : "Invalid command"
+}, {
+  "command" : "payOnline",
+  "timestamp" : 900,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 900
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 902,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 902
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 904,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 904
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 906,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 906
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 908,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 908
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 910,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 910
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 912,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 912
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 914,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 914
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 916,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 916
+  }
+}, {
+  "command" : "payOnline",
+  "timestamp" : 918,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 918
+  }
 }, {
   "error" : "Invalid command"
 }, {
@@ -2984,7 +3139,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     } ]
@@ -2994,10 +3149,13 @@
     "email" : "Alwin_Dowerg@yandex.de",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 751.0,
+      "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "8696843716078966",
+        "status" : "active"
+      } ]
     } ]
   }, {
     "firstName" : "Angel",
@@ -3015,7 +3173,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     } ]
@@ -3080,7 +3238,7 @@
     "email" : "Dott._Arsenio_Bellucc@mail.com.it",
     "accounts" : [ {
       "IBAN" : "RO00POOB5687892910835215",
-      "balance" : 1231.0,
+      "balance" : 1089.9184,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ ]
@@ -3112,7 +3270,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -3132,7 +3290,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     } ]
@@ -3142,10 +3300,13 @@
     "email" : "Rene_Plourde@protonmail.ca",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 647.8888888888888,
+      "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "5069598921863529",
+        "status" : "active"
+      } ]
     } ]
   }, {
     "firstName" : "Harrison",
@@ -3168,7 +3329,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -3189,26 +3350,29 @@
     "email" : "Iris_Sanders-Kramer@outlook.nl",
     "accounts" : [ {
       "IBAN" : "RO33POOB9999273999620457",
-      "balance" : 1556.097142857143,
+      "balance" : 1419.2971428571427,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "8916302128573242",
+        "status" : "active"
+      } ]
     }, {
       "IBAN" : "RO93POOB6760303931698665",
       "balance" : 1641.8892,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1119.1449714285714,
+      "balance" : 1974.0,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "9295697829422937",
         "status" : "active"
       } ]
     }, {
@@ -3217,7 +3381,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "8145060794847555",
         "status" : "active"
       } ]
     }, {
@@ -3226,7 +3390,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "2107645074675430",
         "status" : "active"
       } ]
     } ]
@@ -3251,7 +3415,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     }, {
@@ -3260,7 +3424,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -3274,7 +3438,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -3288,7 +3452,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     }, {
@@ -3314,7 +3478,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -3328,7 +3492,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -3342,7 +3506,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -3356,7 +3520,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -3370,7 +3534,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -3384,7 +3548,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -3398,7 +3562,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -3412,7 +3576,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -3426,7 +3590,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -3440,7 +3604,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -3454,7 +3618,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -3468,7 +3632,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -3538,7 +3702,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     } ]
@@ -3548,10 +3712,13 @@
     "email" : "Alwin_Dowerg@yandex.de",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 751.0,
+      "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "8696843716078966",
+        "status" : "active"
+      } ]
     } ]
   }, {
     "firstName" : "Angel",
@@ -3569,7 +3736,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     } ]
@@ -3634,7 +3801,7 @@
     "email" : "Dott._Arsenio_Bellucc@mail.com.it",
     "accounts" : [ {
       "IBAN" : "RO00POOB5687892910835215",
-      "balance" : 1231.0,
+      "balance" : 1089.9184,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ ]
@@ -3666,7 +3833,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -3686,7 +3853,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     } ]
@@ -3696,10 +3863,13 @@
     "email" : "Rene_Plourde@protonmail.ca",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 647.8888888888888,
+      "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "5069598921863529",
+        "status" : "active"
+      } ]
     } ]
   }, {
     "firstName" : "Harrison",
@@ -3722,7 +3892,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -3743,26 +3913,29 @@
     "email" : "Iris_Sanders-Kramer@outlook.nl",
     "accounts" : [ {
       "IBAN" : "RO33POOB9999273999620457",
-      "balance" : 1556.097142857143,
+      "balance" : 1419.2971428571427,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ ]
+      "cards" : [ {
+        "cardNumber" : "8916302128573242",
+        "status" : "active"
+      } ]
     }, {
       "IBAN" : "RO93POOB6760303931698665",
       "balance" : 1641.8892,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1119.1449714285714,
+      "balance" : 1974.0,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "9295697829422937",
         "status" : "active"
       } ]
     }, {
@@ -3771,7 +3944,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "8145060794847555",
         "status" : "active"
       } ]
     }, {
@@ -3780,7 +3953,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "2107645074675430",
         "status" : "active"
       } ]
     } ]
@@ -3805,7 +3978,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     }, {
@@ -3814,7 +3987,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -3828,7 +4001,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -3842,7 +4015,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     }, {
@@ -3868,7 +4041,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -3882,7 +4055,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -3896,7 +4069,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -3910,7 +4083,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -3924,7 +4097,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -3938,7 +4111,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -3952,7 +4125,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -3966,7 +4139,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -3980,7 +4153,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -3994,7 +4167,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -4008,7 +4181,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -4022,7 +4195,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -4070,7 +4243,7 @@
   "timestamp" : 1030,
   "output" : {
     "IBAN" : "RO65POOB8944016386845896",
-    "balance" : 751.0,
+    "balance" : 736.1704,
     "currency" : "EUR",
     "transactions" : [ ],
     "commerciants" : [ ]
@@ -4148,7 +4321,7 @@
   "timestamp" : 1037,
   "output" : {
     "IBAN" : "RO00POOB5687892910835215",
-    "balance" : 1231.0,
+    "balance" : 1089.9184,
     "currency" : "EUR",
     "transactions" : [ ],
     "commerciants" : [ ]
@@ -4188,7 +4361,7 @@
   "timestamp" : 1041,
   "output" : {
     "IBAN" : "RO98POOB8412955460158769",
-    "balance" : 647.8888888888888,
+    "balance" : 646.1520888888888,
     "currency" : "CAD",
     "transactions" : [ ],
     "commerciants" : [ ]
@@ -4236,7 +4409,7 @@
   "timestamp" : 1045,
   "output" : {
     "IBAN" : "RO33POOB9999273999620457",
-    "balance" : 1556.097142857143,
+    "balance" : 1419.2971428571427,
     "currency" : "EUR",
     "transactions" : [ ],
     "commerciants" : [ ]

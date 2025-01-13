@@ -1,6 +1,4 @@
 [ {
-  "error" : "Invalid command"
-}, {
   "command" : "printTransactions",
   "timestamp" : 9,
   "output" : [ {
@@ -24,9 +22,10 @@
     "receiverIBAN" : "RO69POOB6209498372540635",
     "amount" : "101.0 RON",
     "transferType" : "sent"
+  }, {
+    "timestamp" : 8,
+    "description" : "Insufficient funds"
   } ]
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "printUsers",
   "timestamp" : 11,
@@ -41,7 +40,7 @@
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 731.798,
+      "balance" : 676.688,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
@@ -62,7 +61,12 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 15,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 15
+  }
 }, {
   "command" : "printTransactions",
   "timestamp" : 16,
@@ -101,8 +105,6 @@
     "cardHolder" : "Rada_Nita@gmail.ro"
   } ]
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "printUsers",
   "timestamp" : 20,
   "output" : [ {
@@ -116,7 +118,7 @@
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 914.798,
+      "balance" : 687.344,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {

@@ -2491,9 +2491,19 @@
     } ]
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 854,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 854
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 860,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 860
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 861,
@@ -2502,7 +2512,12 @@
     "timestamp" : 861
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 864,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 864
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 865,
@@ -2518,7 +2533,12 @@
     "timestamp" : 868
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 870,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 870
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 871,
@@ -2527,7 +2547,12 @@
     "timestamp" : 871
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 874,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 874
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 876,
@@ -2536,7 +2561,12 @@
     "timestamp" : 876
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "cashWithdrawal",
+  "timestamp" : 878,
+  "output" : {
+    "description" : "Card not found",
+    "timestamp" : 878
+  }
 }, {
   "command" : "printUsers",
   "timestamp" : 880,

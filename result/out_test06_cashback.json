@@ -40,8 +40,6 @@
     } ]
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "printUsers",
   "timestamp" : 46,
   "output" : [ {

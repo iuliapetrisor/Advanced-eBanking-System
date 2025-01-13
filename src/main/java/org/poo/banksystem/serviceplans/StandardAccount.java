@@ -16,7 +16,7 @@ public class StandardAccount implements AccountPlan {
      * @return the transaction fee
      */
     @Override
-    public double getTransactionFee(final double amount) {
+    public double getTransactionFee(final double amountInRon, final double amount) {
         return FEE * amount;
     }
 }

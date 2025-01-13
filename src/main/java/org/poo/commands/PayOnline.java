@@ -61,7 +61,8 @@ public class PayOnline implements Command {
                                     && account.getBalance() - amountInAccountCurrency
                                     >= account.getMinBalance()) {
                                 account.pay(amountInAccountCurrency);
-                                account.pay(account.getTransactionFee(amountInAccountCurrency));
+                                account.pay(account.getTransactionFee(amountInRon,
+                                        amountInAccountCurrency));
                                 Transaction transaction = new Transaction.Builder()
                                         .timestamp(command.getTimestamp())
                                         .description("Card payment")

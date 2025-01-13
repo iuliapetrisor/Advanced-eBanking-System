@@ -22,6 +22,7 @@ import org.poo.commands.SpendingsReport;
 import org.poo.commands.AddInterest;
 import org.poo.commands.ChangeInterestRate;
 import org.poo.commands.WithdrawSavings;
+import org.poo.commands.UpgradePlan;
 import org.poo.fileio.CommerciantInput;
 import org.poo.transactions.TransactionManager;
 import org.poo.fileio.CommandInput;
@@ -56,6 +57,7 @@ public class Bank {
     private AddInterest addInterest;
     private ChangeInterestRate changeInterestRate;
     private WithdrawSavings withdrawSavings;
+    private UpgradePlan upgradePlan;
 
     /**
      * Constructor for the Bank class.
@@ -100,6 +102,7 @@ public class Bank {
         addInterest = new AddInterest(users);
         changeInterestRate = new ChangeInterestRate(users, transactionManager);
         withdrawSavings = new WithdrawSavings(users, exchangeRateManager, transactionManager);
+        upgradePlan = new UpgradePlan(users, exchangeRateManager, transactionManager);
     }
 
     /**
@@ -172,6 +175,9 @@ public class Bank {
                     break;
                 case "withdrawSavings":
                     withdrawSavings.execute(command, objectMapper, output);
+                    break;
+                case "upgradePlan":
+                    upgradePlan.execute(command, objectMapper, output);
                     break;
                 default:
                     ObjectNode outputNode = objectMapper.createObjectNode();

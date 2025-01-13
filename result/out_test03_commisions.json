@@ -41,7 +41,7 @@
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 732.0,
+      "balance" : 731.798,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
@@ -116,7 +116,7 @@
     "email" : "Aurica_Dinu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 915.0,
+      "balance" : 914.798,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {

@@ -86,10 +86,6 @@
     "timestamp" : 210
   }
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
   "command" : "printUsers",
   "timestamp" : 216,
   "output" : [ {
@@ -194,7 +190,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 3551.0,
+      "balance" : 3451.0,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -351,7 +347,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 3551.0,
+      "balance" : 3451.0,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -379,7 +375,7 @@
   "timestamp" : 226,
   "output" : {
     "IBAN" : "RO65POOB8944016386845896",
-    "balance" : 4154.67,
+    "balance" : 4037.67,
     "currency" : "RON",
     "transactions" : [ {
       "timestamp" : 55,
@@ -390,6 +386,15 @@
     }, {
       "timestamp" : 198,
       "description" : "You do not have a classic account."
+    }, {
+      "timestamp" : 212,
+      "description" : "Upgrade plan",
+      "accountIBAN" : "RO65POOB8944016386845896",
+      "newPlanType" : "silver"
+    }, {
+      "timestamp" : 214,
+      "description" : "The user already has the silver plan.",
+      "accountIBAN" : "RO65POOB8944016386845896"
     }, {
       "timestamp" : 223,
       "description" : "Interest rate of the account changed to 0.17"
@@ -470,6 +475,15 @@
   }, {
     "timestamp" : 198,
     "description" : "You do not have a classic account."
+  }, {
+    "timestamp" : 212,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO65POOB8944016386845896",
+    "newPlanType" : "silver"
+  }, {
+    "timestamp" : 214,
+    "description" : "The user already has the silver plan.",
+    "accountIBAN" : "RO65POOB8944016386845896"
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -588,6 +602,15 @@
   }, {
     "timestamp" : 198,
     "description" : "You do not have a classic account."
+  }, {
+    "timestamp" : 212,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO65POOB8944016386845896",
+    "newPlanType" : "silver"
+  }, {
+    "timestamp" : 214,
+    "description" : "The user already has the silver plan.",
+    "accountIBAN" : "RO65POOB8944016386845896"
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -756,7 +779,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5847.92,
+      "balance" : 5730.92,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -785,6 +808,15 @@
   }, {
     "timestamp" : 198,
     "description" : "You do not have a classic account."
+  }, {
+    "timestamp" : 212,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO65POOB8944016386845896",
+    "newPlanType" : "silver"
+  }, {
+    "timestamp" : 214,
+    "description" : "The user already has the silver plan.",
+    "accountIBAN" : "RO65POOB8944016386845896"
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -912,7 +944,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5847.92,
+      "balance" : 5730.92,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1072,7 +1104,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5847.92,
+      "balance" : 5730.92,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1224,7 +1256,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5847.92,
+      "balance" : 5730.92,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1409,7 +1441,7 @@
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 21.0,
+      "balance" : 20.62199999999999,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]
@@ -1432,7 +1464,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5847.92,
+      "balance" : 5730.92,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1624,7 +1656,7 @@
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 7231.0,
+      "balance" : 7230.622,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]
@@ -1647,7 +1679,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5847.92,
+      "balance" : 5730.92,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1690,6 +1722,15 @@
   }, {
     "timestamp" : 198,
     "description" : "You do not have a classic account."
+  }, {
+    "timestamp" : 212,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO65POOB8944016386845896",
+    "newPlanType" : "silver"
+  }, {
+    "timestamp" : 214,
+    "description" : "The user already has the silver plan.",
+    "accountIBAN" : "RO65POOB8944016386845896"
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -1874,7 +1915,7 @@
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 7822.0,
+      "balance" : 7821.622,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]
@@ -1897,7 +1938,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5847.92,
+      "balance" : 5730.92,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]

@@ -6,7 +6,6 @@ import org.poo.banksystem.strategies.CashbackStrategy;
 import org.poo.banksystem.strategies.NrOfTransactionsStrategy;
 import org.poo.banksystem.strategies.SpendingThresholdStrategy;
 import org.poo.transactions.Transaction;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -207,8 +206,8 @@ public class Account {
      * @param amount the amount of the transaction
      * @return the transaction fee
      */
-    public double getTransactionFee(final double amount) {
-        return accountPlan.getTransactionFee(amount);
+    public double getTransactionFee(final double amountInRon, final double amount) {
+        return accountPlan.getTransactionFee(amountInRon, amount);
     }
 
     /**

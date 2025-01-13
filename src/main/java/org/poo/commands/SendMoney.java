@@ -68,13 +68,15 @@ public class SendMoney implements Command {
         if (senderAccount == null || receiverAccount == null) {
             return;
         }
-
+        double amountInRon = exchangeRateManager.convert(
+                command.getAmount(), senderAccount.getCurrency(), "RON");
         double amountInReceiverCurrency = exchangeRateManager.convert(
                 command.getAmount(), senderAccount.getCurrency(), receiverAccount.getCurrency());
 //        BigDecimal amountBD = BigDecimal.valueOf(amountInReceiverCurrency)
 //                .setScale(ExchangeRateManager.SCALE_PRECISION, RoundingMode.HALF_UP);
         if (senderAccount.getBalance() >= command.getAmount()) {
             senderAccount.pay(command.getAmount());
+            senderAccount.pay(senderAccount.getTransactionFee(amountInRon, command.getAmount()));
             receiverAccount.addFunds(amountInReceiverCurrency);
 
             Transaction transaction = new Transaction.Builder()

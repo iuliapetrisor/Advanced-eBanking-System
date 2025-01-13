@@ -19,6 +19,7 @@ public final class Transaction {
     private final String description;
     private final String senderIBAN;
     private final String receiverIBAN;
+    private final String accountIBAN;
     private final String amount;
     private final String transferType;
     private final String commerciant;
@@ -27,6 +28,7 @@ public final class Transaction {
     private final String cardHolder;
     private final String currency;
     private final List<String> involvedAccounts;
+    private final String newPlanType;
     private final String error;
 
     /**
@@ -40,6 +42,8 @@ public final class Transaction {
         this.description = builder.description;
         this.senderIBAN = builder.senderIBAN;
         this.receiverIBAN = builder.receiverIBAN;
+        this.accountIBAN = builder.accountIBAN;
+        this.newPlanType = builder.newPlanType;
         this.amount = builder.amount;
         this.transferType = builder.transferType;
         this.commerciant = builder.commerciant;
@@ -64,6 +68,7 @@ public final class Transaction {
         private String description;
         private String senderIBAN;
         private String receiverIBAN;
+        private String accountIBAN;
         private String amount;
         private String transferType;
         private String commerciant;
@@ -71,6 +76,7 @@ public final class Transaction {
         private String card;
         private String cardHolder;
         private String currency;
+        private String newPlanType;
         private List<String> involvedAccounts = null;
         private String error = null;
 
@@ -163,6 +169,16 @@ public final class Transaction {
         }
 
         /**
+         * Sets the account IBAN for the transaction.
+         *
+         * @param inputAccountIBAN the account IBAN of the transaction
+         * @return the builder instance
+         */
+        public Builder accountIBAN(final String inputAccountIBAN) {
+            this.accountIBAN = inputAccountIBAN;
+            return this;
+        }
+        /**
          * Sets the card for the transaction.
          *
          * @param inputCard the card of the transaction
@@ -206,6 +222,16 @@ public final class Transaction {
             return this;
         }
 
+        /**
+         * Sets the new plan type for the transaction.
+         *
+         * @param inputNewPlanType the new plan type of the transaction
+         * @return the builder instance
+         */
+        public Builder newPlanType(final String inputNewPlanType) {
+            this.newPlanType = inputNewPlanType;
+            return this;
+        }
         /**
          * Sets the error for the transaction.
          *
@@ -255,6 +281,14 @@ public final class Transaction {
     }
 
     /**
+     * Gets the account IBAN of the transaction.
+     *
+     * @return the account IBAN of the transaction
+     */
+    public String getAccountIBAN() {
+        return accountIBAN;
+    }
+    /**
      * Gets the receiver IBAN of the transaction.
      *
      * @return the receiver IBAN of the transaction
@@ -279,6 +313,15 @@ public final class Transaction {
      */
     public String getTransferType() {
         return transferType;
+    }
+
+    /**
+     * Gets the card of the transaction.
+     *
+     * @return the card of the transaction
+     */
+    public String getNewPlanType() {
+        return newPlanType;
     }
 
     /**
@@ -331,6 +374,9 @@ public final class Transaction {
         if (account != null) {
             transactionNode.put("account", account);
         }
+        if (accountIBAN != null) {
+            transactionNode.put("accountIBAN", accountIBAN);
+        }
         if (card != null) {
             transactionNode.put("card", card);
         }
@@ -345,6 +391,9 @@ public final class Transaction {
             for (String accountIter : involvedAccounts) {
                 transactionNode.withArray("involvedAccounts").add(accountIter);
             }
+        }
+        if (newPlanType != null) {
+            transactionNode.put("newPlanType", newPlanType);
         }
         if (error != null) {
             transactionNode.put("error", error);

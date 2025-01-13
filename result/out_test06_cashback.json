@@ -42,8 +42,6 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "printUsers",
   "timestamp" : 46,
   "output" : [ {
@@ -52,7 +50,7 @@
     "email" : "Tiffany_Leonard@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 860.7252999999998,
+      "balance" : 527.3919666666665,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -86,7 +84,7 @@
   "timestamp" : 47,
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 860.7252999999998,
+    "balance" : 527.3919666666665,
     "currency" : "USD",
     "transactions" : [ {
       "timestamp" : 4,
@@ -129,8 +127,6 @@
     "error" : "Account couldn't be deleted - see org.poo.transactions for details",
     "timestamp" : 48
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 52,

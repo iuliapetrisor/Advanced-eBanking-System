@@ -10,5 +10,5 @@ public interface AccountPlan {
      * @param amount the amount of the transaction
      * @return the transaction fee
      */
-    double getTransactionFee(double amount);
+    double getTransactionFee(double amountInRon, double amount);
 }

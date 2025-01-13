@@ -332,8 +332,6 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "printTransactions",
   "timestamp" : 60,
   "output" : [ {
@@ -362,6 +360,11 @@
     "receiverIBAN" : "RO76POOB4035116042454483",
     "amount" : "3.0 USD",
     "transferType" : "sent"
+  }, {
+    "timestamp" : 54,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO37POOB7013767509830666",
+    "newPlanType" : "silver"
   }, {
     "timestamp" : 56,
     "description" : "Card payment",
@@ -398,7 +401,7 @@
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO37POOB7013767509830666",
-      "balance" : 2068.0,
+      "balance" : 2046.3274285714285,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -523,8 +526,6 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "printTransactions",
   "timestamp" : 68,
   "output" : [ {
@@ -536,6 +537,11 @@
     "account" : "RO58POOB7344468893732422",
     "card" : "7004757825892043",
     "cardHolder" : "Jason_Carpenter@hotmail.us"
+  }, {
+    "timestamp" : 64,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO58POOB7344468893732422",
+    "newPlanType" : "gold"
   } ]
 }, {
   "command" : "printUsers",
@@ -567,7 +573,7 @@
     "email" : "Brandi_Schultz@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO37POOB7013767509830666",
-      "balance" : 2068.0,
+      "balance" : 2046.3274285714285,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -612,7 +618,7 @@
     "email" : "Jason_Carpenter@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 2977.0,
+      "balance" : 2902.0,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {

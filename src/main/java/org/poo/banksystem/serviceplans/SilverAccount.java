@@ -17,7 +17,7 @@ public class SilverAccount implements AccountPlan {
      * @return the transaction fee
      */
     @Override
-    public double getTransactionFee(final double amount) {
-        return amount < MAX_AMOUNT ? 0 : amount * FEE;
+    public double getTransactionFee(final double amountInRon, final double amount) {
+        return amountInRon < MAX_AMOUNT ? 0 : amount * FEE;
     }
 }

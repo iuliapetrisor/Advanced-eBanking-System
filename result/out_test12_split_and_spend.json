@@ -383,16 +383,6 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 205,
   "output" : {
@@ -511,6 +501,11 @@
     "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ],
     "error" : "Account RO58POOB2721178218599590 has insufficient funds for a split payment."
   }, {
+    "timestamp" : 169,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO58POOB7344468893732422",
+    "newPlanType" : "silver"
+  }, {
     "timestamp" : 177,
     "description" : "Card payment",
     "amount" : 132.44444444444446,
@@ -575,6 +570,11 @@
     "currency" : "EUR",
     "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ],
     "error" : "Account RO58POOB2721178218599590 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 162,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO37POOB7013767509830666",
+    "newPlanType" : "silver"
   }, {
     "timestamp" : 163,
     "description" : "Card payment",

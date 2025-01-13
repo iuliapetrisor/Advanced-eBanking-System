@@ -1,5 +1,13 @@
 Starting audit...
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:58: Line is longer than 100 characters (found 101). [LineLength]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:65: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:13:8: Unused import - org.poo.utils.Utils. [UnusedImports]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:15:8: Unused import - javax.management.StringValueExp. [UnusedImports]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:52:29: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:52:29: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:57: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:70: Line is longer than 100 characters (found 101). [LineLength]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/CashWithdrawal.java:77: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:86:9: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:86:9: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:91:57: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 10 errors.

@@ -804,7 +804,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5730.92,
+      "balance" : 2968.16,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -851,6 +851,13 @@
     "amount" : 355.75,
     "currency" : "RON",
     "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+  }, {
+    "timestamp" : 248,
+    "description" : "Cinema tickets for a weekend outing",
+    "senderIBAN" : "RO65POOB8944016386845896",
+    "receiverIBAN" : "RO75POOB9251835314648427",
+    "amount" : "2760.0 RON",
+    "transferType" : "sent"
   } ]
 }, {
   "command" : "printUsers",
@@ -969,7 +976,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5730.92,
+      "balance" : 2968.16,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1129,7 +1136,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5730.92,
+      "balance" : 2968.16,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1281,7 +1288,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5730.92,
+      "balance" : 2968.16,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1489,7 +1496,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5730.92,
+      "balance" : 2968.16,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1681,7 +1688,7 @@
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 7230.622,
+      "balance" : 5599.366,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]
@@ -1704,7 +1711,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5730.92,
+      "balance" : 2968.16,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]
@@ -1770,6 +1777,13 @@
     "amount" : 355.75,
     "currency" : "RON",
     "involvedAccounts" : [ "RO69POOB6209498372540635", "RO58POOB2721178218599590", "RO65POOB8944016386845896", "RO58POOB7344468893732422" ]
+  }, {
+    "timestamp" : 248,
+    "description" : "Cinema tickets for a weekend outing",
+    "senderIBAN" : "RO65POOB8944016386845896",
+    "receiverIBAN" : "RO75POOB9251835314648427",
+    "amount" : "2760.0 RON",
+    "transferType" : "sent"
   }, {
     "timestamp" : 251,
     "description" : "You do not have a classic account."
@@ -1955,7 +1969,7 @@
     "email" : "Kevin_Edwards@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO68POOB1848616931405475",
-      "balance" : 7821.622,
+      "balance" : 6190.366,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]
@@ -1978,7 +1992,7 @@
     "email" : "Barbu_Suciu@outlook.ro",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 5730.92,
+      "balance" : 2968.16,
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ ]

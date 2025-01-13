@@ -492,7 +492,8 @@
     "error" : "Account RO58POOB2721178218599590 has insufficient funds for a split payment."
   }, {
     "timestamp" : 165,
-    "description" : "Cash withdrawal of 420.0"
+    "description" : "Cash withdrawal of 420.0",
+    "amount" : 420.0
   }, {
     "timestamp" : 169,
     "description" : "Upgrade plan",
@@ -500,7 +501,8 @@
     "newPlanType" : "silver"
   }, {
     "timestamp" : 170,
-    "description" : "Cash withdrawal of 64.0"
+    "description" : "Cash withdrawal of 64.0",
+    "amount" : 64.0
   }, {
     "timestamp" : 177,
     "description" : "Card payment",

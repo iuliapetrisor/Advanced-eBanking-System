@@ -46,6 +46,9 @@ public class PayOnline implements Command {
     @Override
     public void execute(final CommandInput command, final ObjectMapper objectMapper,
                         final ArrayNode output) {
+        if (command.getAmount() == 0) {
+            return;
+        }
         for (User user : users) {
             if (user.getEmail().equals(command.getEmail())) {
                 for (Account account : user.getAccounts()) {

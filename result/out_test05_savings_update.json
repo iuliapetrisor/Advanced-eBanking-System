@@ -75,7 +75,8 @@
     "cardHolder" : "Caroline_Leleu@outlook.fr"
   }, {
     "timestamp" : 614,
-    "description" : "Cash withdrawal of 639.0"
+    "description" : "Cash withdrawal of 639.0",
+    "amount" : 639.0
   } ]
 }, {
   "command" : "printTransactions",
@@ -91,7 +92,8 @@
     "cardHolder" : "Caroline_Leleu@outlook.fr"
   }, {
     "timestamp" : 614,
-    "description" : "Cash withdrawal of 639.0"
+    "description" : "Cash withdrawal of 639.0",
+    "amount" : 639.0
   }, {
     "timestamp" : 616,
     "description" : "You do not have a classic account."
@@ -110,7 +112,8 @@
     "cardHolder" : "Caroline_Leleu@outlook.fr"
   }, {
     "timestamp" : 614,
-    "description" : "Cash withdrawal of 639.0"
+    "description" : "Cash withdrawal of 639.0",
+    "amount" : 639.0
   }, {
     "timestamp" : 616,
     "description" : "You do not have a classic account."

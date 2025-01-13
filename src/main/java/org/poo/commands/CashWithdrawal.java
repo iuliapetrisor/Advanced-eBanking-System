@@ -12,6 +12,7 @@ import org.poo.transactions.TransactionManager;
 import org.poo.transactions.Transaction;
 import org.poo.utils.Utils;
 
+import javax.management.StringValueExp;
 import java.util.List;
 
 
@@ -48,6 +49,17 @@ public class CashWithdrawal implements Command {
                 for (Account account : user.getAccounts()) {
                     for (Card card : account.getCards()) {
                         if (card.getCardNumber().equals(command.getCardNumber())) {
+                            if(card.isAlreadyUsed()) {
+                                Transaction transaction = new Transaction.Builder()
+                                        .timestamp(command.getTimestamp())
+                                        .description("Card has already been used")
+                                        .build();
+                                transactionManager.addTransactionToUser(user.getEmail(), transaction);
+                                transactionManager.addTransactionToAccount(user.getEmail(),
+                                        account.getIBAN(), transaction);
+                                return;
+                            }
+
                             double amountInRon = command.getAmount();
                             double amountInAccountCurrency = exchangeRateManager.convert(
                                     amountInRon, "RON",
@@ -60,42 +72,14 @@ public class CashWithdrawal implements Command {
                                 Transaction transaction = new Transaction.Builder()
                                         .timestamp(command.getTimestamp())
                                         .description("Cash withdrawal of " + amountInRon)
-                                        //.accountIBAN(accountIBAN)
+                                        .amount(String.valueOf(amountInRon))
                                         .build();
                                 transactionManager.addTransactionToUser(user.getEmail(), transaction);
                                 transactionManager.addTransactionToAccount(user.getEmail(),
                                         account.getIBAN(), transaction);
 
                                 if (card.isOneTime()) {
-                                    transaction = new Transaction.Builder()
-                                            .timestamp(command.getTimestamp())
-                                            .description("The card has been destroyed")
-                                            .card(card.getCardNumber())
-                                            .cardHolder(user.getEmail())
-                                            .account(account.getIBAN())
-                                            .build();
-                                    transactionManager.addTransactionToUser(user.getEmail(),
-                                            transaction);
-                                    transactionManager.addTransactionToAccount(command.getEmail(),
-                                            account.getIBAN(), transaction);
-
-                                    account.deleteCard(card.getCardNumber());
-                                    String newCardNumber = Utils.generateCardNumber();
-                                    Card newCard = new Card(newCardNumber, "active");
-                                    newCard.setOneTime(true);
-                                    account.addCard(newCard);
-
-                                    transaction = new Transaction.Builder()
-                                            .timestamp(command.getTimestamp())
-                                            .description("New card created")
-                                            .card(newCardNumber)
-                                            .cardHolder(user.getEmail())
-                                            .account(account.getIBAN())
-                                            .build();
-                                    transactionManager.addTransactionToUser(user.getEmail(),
-                                            transaction);
-                                    transactionManager.addTransactionToAccount(command.getEmail(),
-                                            account.getIBAN(), transaction);
+                                    card.setAlreadyUsed(true);
                                     return;
                                 }
                                 return;

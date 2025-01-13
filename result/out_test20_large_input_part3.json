@@ -2311,6 +2311,13 @@
     "timestamp" : 805
   }
 }, {
+  "command" : "sendMoney",
+  "timestamp" : 806,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 806
+  }
+}, {
   "command" : "payOnline",
   "timestamp" : 807,
   "output" : {
@@ -2353,6 +2360,13 @@
     "timestamp" : 817
   }
 }, {
+  "command" : "sendMoney",
+  "timestamp" : 818,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 818
+  }
+}, {
   "command" : "payOnline",
   "timestamp" : 819,
   "output" : {
@@ -2365,6 +2379,13 @@
   "output" : {
     "description" : "Card not found",
     "timestamp" : 821
+  }
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 822,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 822
   }
 }, {
   "command" : "payOnline",
@@ -2395,6 +2416,13 @@
     "timestamp" : 829
   }
 }, {
+  "command" : "sendMoney",
+  "timestamp" : 830,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 830
+  }
+}, {
   "command" : "payOnline",
   "timestamp" : 831,
   "output" : {
@@ -2407,6 +2435,13 @@
   "output" : {
     "description" : "Card not found",
     "timestamp" : 833
+  }
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 834,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 834
   }
 }, {
   "command" : "payOnline",
@@ -2498,6 +2533,13 @@
     "timestamp" : 854
   }
 }, {
+  "command" : "sendMoney",
+  "timestamp" : 859,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 859
+  }
+}, {
   "command" : "cashWithdrawal",
   "timestamp" : 860,
   "output" : {
@@ -2576,7 +2618,7 @@
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 6242.981428571428,
+      "balance" : 3288.9814285714283,
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
@@ -3175,7 +3217,7 @@
       } ]
     }, {
       "IBAN" : "RO01POOB9893132718323396",
-      "balance" : 1403.0,
+      "balance" : 120.0,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
@@ -3189,7 +3231,7 @@
   "timestamp" : 881,
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 6242.981428571428,
+    "balance" : 3288.9814285714283,
     "currency" : "CAD",
     "transactions" : [ {
       "timestamp" : 620,

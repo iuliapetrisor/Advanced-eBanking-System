@@ -93,7 +93,7 @@ public class Bank {
         createOneTimeCard = new CreateOneTimeCard(users, transactionManager);
         deleteCard = new DeleteCard(users, transactionManager);
         payOnline = new PayOnline(users, commerciants, exchangeRateManager, transactionManager);
-        sendMoney = new SendMoney(users, exchangeRateManager, transactionManager);
+        sendMoney = new SendMoney(users, commerciants, exchangeRateManager, transactionManager);
         printTransactions = new PrintTransactions(users);
         setMinBalance = new SetMinBalance(users);
         checkCardStatus = new CheckCardStatus(users, transactionManager);

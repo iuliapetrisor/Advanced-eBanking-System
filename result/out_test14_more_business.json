@@ -145,13 +145,55 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
+  "command" : "sendMoney",
+  "timestamp" : 210,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 210
+  }
 }, {
   "error" : "Invalid command"
 }, {
   "error" : "Invalid command"
 }, {
   "error" : "Invalid command"
+}, {
+  "error" : "Invalid command"
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 395,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 395
+  }
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 396,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 396
+  }
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 398,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 398
+  }
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 399,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 399
+  }
+}, {
+  "command" : "sendMoney",
+  "timestamp" : 400,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 400
+  }
 }, {
   "error" : "Invalid command"
 }, {

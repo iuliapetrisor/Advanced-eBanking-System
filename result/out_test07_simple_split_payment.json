@@ -1,4 +1,11 @@
 [ {
+  "command" : "sendMoney",
+  "timestamp" : 6,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 6
+  }
+}, {
   "command" : "printUsers",
   "timestamp" : 7,
   "output" : [ {

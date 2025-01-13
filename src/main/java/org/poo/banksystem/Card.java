@@ -4,6 +4,7 @@ public class Card {
     private final String cardNumber;
     private String status;
     private boolean oneTime = false;
+    private boolean alreadyUsed = false;
 
     /**
      * Constructor for the Card class.
@@ -32,6 +33,24 @@ public class Card {
      */
     public void setOneTime(final boolean oneTime) {
         this.oneTime = oneTime;
+    }
+
+    /**
+     * Getter for the already used status of the card.
+     *
+     * @return the already used status of the card
+     */
+    public boolean isAlreadyUsed() {
+        return alreadyUsed;
+    }
+
+    /**
+     * Setter for the already used status of the card.
+     *
+     * @param alreadyUsed the already used status of the card
+     */
+    public void setAlreadyUsed(final boolean alreadyUsed) {
+        this.alreadyUsed = alreadyUsed;
     }
 
     /**

@@ -46,7 +46,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     } ]
@@ -60,7 +60,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "6796819982034243",
         "status" : "active"
       } ]
     } ]
@@ -214,7 +214,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "0084627535411906",
         "status" : "active"
       } ]
     } ]
@@ -242,7 +242,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -270,7 +270,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "6467982927008637",
         "status" : "active"
       } ]
     } ]
@@ -437,7 +437,7 @@
     "timestamp" : 287,
     "description" : "New card created",
     "account" : "RO90POOB5450777208072365",
-    "card" : "4097439592846732",
+    "card" : "8916302128573242",
     "cardHolder" : "Marvin_Peterson@zoho.ch"
   }, {
     "timestamp" : 317,
@@ -477,19 +477,8 @@
     "cardHolder" : "Alwin_Dowerg@yandex.de"
   }, {
     "timestamp" : 286,
-    "description" : "Cash withdrawal of 74.0"
-  }, {
-    "timestamp" : 286,
-    "description" : "The card has been destroyed",
-    "account" : "RO65POOB8944016386845896",
-    "card" : "6796819982034243",
-    "cardHolder" : "Alwin_Dowerg@yandex.de"
-  }, {
-    "timestamp" : 286,
-    "description" : "New card created",
-    "account" : "RO65POOB8944016386845896",
-    "card" : "8696843716078966",
-    "cardHolder" : "Alwin_Dowerg@yandex.de"
+    "description" : "Cash withdrawal of 74.0",
+    "amount" : 74.0
   }, {
     "timestamp" : 320,
     "description" : "Split payment of 11252.10 EUR",
@@ -665,7 +654,8 @@
     "cardHolder" : "Dott._Arsenio_Bellucc@mail.com.it"
   }, {
     "timestamp" : 284,
-    "description" : "Cash withdrawal of 704.0"
+    "description" : "Cash withdrawal of 704.0",
+    "amount" : 704.0
   }, {
     "timestamp" : 320,
     "description" : "Split payment of 11252.10 EUR",
@@ -763,19 +753,8 @@
     "cardHolder" : "Rene_Plourde@protonmail.ca"
   }, {
     "timestamp" : 290,
-    "description" : "Cash withdrawal of 6.0"
-  }, {
-    "timestamp" : 290,
-    "description" : "The card has been destroyed",
-    "account" : "RO98POOB8412955460158769",
-    "card" : "0084627535411906",
-    "cardHolder" : "Rene_Plourde@protonmail.ca"
-  }, {
-    "timestamp" : 290,
-    "description" : "New card created",
-    "account" : "RO98POOB8412955460158769",
-    "card" : "5069598921863529",
-    "cardHolder" : "Rene_Plourde@protonmail.ca"
+    "description" : "Cash withdrawal of 6.0",
+    "amount" : 6.0
   }, {
     "timestamp" : 320,
     "description" : "Split payment of 11252.10 EUR",
@@ -838,7 +817,7 @@
     "timestamp" : 288,
     "description" : "New card created",
     "account" : "RO68POOB1848616931405475",
-    "card" : "2289183361654620",
+    "card" : "8696843716078966",
     "cardHolder" : "Isabel_Grande_Sales@hotmail.es"
   }, {
     "timestamp" : 315,
@@ -903,19 +882,8 @@
     "cardHolder" : "Iris_Sanders-Kramer@outlook.nl"
   }, {
     "timestamp" : 285,
-    "description" : "Cash withdrawal of 684.0"
-  }, {
-    "timestamp" : 285,
-    "description" : "The card has been destroyed",
-    "account" : "RO33POOB9999273999620457",
-    "card" : "6467982927008637",
-    "cardHolder" : "Iris_Sanders-Kramer@outlook.nl"
-  }, {
-    "timestamp" : 285,
-    "description" : "New card created",
-    "account" : "RO33POOB9999273999620457",
-    "card" : "8916302128573242",
-    "cardHolder" : "Iris_Sanders-Kramer@outlook.nl"
+    "description" : "Cash withdrawal of 684.0",
+    "amount" : 684.0
   }, {
     "timestamp" : 315,
     "description" : "Monthly rent payment for a flat in Madrid",
@@ -1008,7 +976,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     } ]
@@ -1022,7 +990,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "6796819982034243",
         "status" : "active"
       } ]
     } ]
@@ -1045,7 +1013,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -1166,7 +1134,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -1189,7 +1157,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -1203,7 +1171,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "0084627535411906",
         "status" : "active"
       } ]
     } ]
@@ -1231,7 +1199,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -1259,7 +1227,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "6467982927008637",
         "status" : "active"
       } ]
     }, {
@@ -1268,7 +1236,7 @@
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     } ]
@@ -1296,7 +1264,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     }, {
@@ -1305,7 +1273,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -1319,7 +1287,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -1333,7 +1301,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     } ]
@@ -1347,7 +1315,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     } ]
@@ -1361,7 +1329,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -1375,7 +1343,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     } ]
@@ -1389,7 +1357,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1403,7 +1371,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -1417,7 +1385,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -1431,7 +1399,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -1445,7 +1413,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -1459,7 +1427,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -1473,7 +1441,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -1487,7 +1455,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -1501,7 +1469,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -1554,7 +1522,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     } ]
@@ -1568,7 +1536,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8696843716078966",
+        "cardNumber" : "6796819982034243",
         "status" : "active"
       } ]
     } ]
@@ -1591,7 +1559,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -1712,7 +1680,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -1735,7 +1703,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -1749,7 +1717,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5069598921863529",
+        "cardNumber" : "0084627535411906",
         "status" : "active"
       } ]
     } ]
@@ -1777,7 +1745,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -1805,7 +1773,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8916302128573242",
+        "cardNumber" : "6467982927008637",
         "status" : "active"
       } ]
     }, {
@@ -1814,7 +1782,7 @@
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     } ]
@@ -1842,7 +1810,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     }, {
@@ -1851,7 +1819,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -1865,7 +1833,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -1879,7 +1847,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     } ]
@@ -1893,7 +1861,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     } ]
@@ -1907,7 +1875,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -1921,7 +1889,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     } ]
@@ -1935,7 +1903,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -1949,7 +1917,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -1963,7 +1931,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -1977,7 +1945,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -1991,7 +1959,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -2005,7 +1973,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -2019,7 +1987,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -2033,7 +2001,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -2047,7 +2015,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -2282,7 +2250,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     } ]
@@ -2295,10 +2263,7 @@
       "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "8696843716078966",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Angel",
@@ -2316,7 +2281,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -2413,7 +2378,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -2433,7 +2398,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -2446,10 +2411,7 @@
       "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "5069598921863529",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Harrison",
@@ -2472,7 +2434,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -2496,17 +2458,14 @@
       "balance" : 1419.2971428571427,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "8916302128573242",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     }, {
       "IBAN" : "RO93POOB6760303931698665",
       "balance" : 1641.8892,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     }, {
@@ -2515,7 +2474,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "9295697829422937",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     }, {
@@ -2524,7 +2483,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "8145060794847555",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     }, {
@@ -2533,7 +2492,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "2107645074675430",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -2558,7 +2517,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     }, {
@@ -2567,7 +2526,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -2581,7 +2540,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -2595,7 +2554,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     }, {
@@ -2621,7 +2580,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     } ]
@@ -2635,7 +2594,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -2649,7 +2608,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     } ]
@@ -2663,7 +2622,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -2677,7 +2636,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -2691,7 +2650,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -2705,7 +2664,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -2719,7 +2678,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -2733,7 +2692,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -2747,7 +2706,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -2761,7 +2720,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -2775,7 +2734,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -2790,76 +2749,6 @@
   "error" : "Invalid command"
 }, {
   "error" : "Invalid command"
-}, {
-  "command" : "payOnline",
-  "timestamp" : 900,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 900
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 902,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 902
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 904,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 904
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 906,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 906
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 908,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 908
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 910,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 910
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 912,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 912
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 914,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 914
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 916,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 916
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 918,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 918
-  }
 }, {
   "error" : "Invalid command"
 }, {
@@ -3139,7 +3028,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     } ]
@@ -3152,10 +3041,7 @@
       "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "8696843716078966",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Angel",
@@ -3173,7 +3059,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -3270,7 +3156,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -3290,7 +3176,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -3303,10 +3189,7 @@
       "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "5069598921863529",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Harrison",
@@ -3329,7 +3212,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -3353,26 +3236,23 @@
       "balance" : 1419.2971428571427,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "8916302128573242",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     }, {
       "IBAN" : "RO93POOB6760303931698665",
       "balance" : 1641.8892,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1974.0,
+      "balance" : 1119.1449714285714,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "9295697829422937",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     }, {
@@ -3381,7 +3261,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "8145060794847555",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     }, {
@@ -3390,7 +3270,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "2107645074675430",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -3415,7 +3295,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     }, {
@@ -3424,7 +3304,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -3438,7 +3318,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -3452,7 +3332,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     }, {
@@ -3478,7 +3358,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     } ]
@@ -3492,7 +3372,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -3506,7 +3386,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     } ]
@@ -3520,7 +3400,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -3534,7 +3414,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -3548,7 +3428,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -3562,7 +3442,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -3576,7 +3456,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -3590,7 +3470,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -3604,7 +3484,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -3618,7 +3498,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -3632,7 +3512,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]
@@ -3702,7 +3582,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4097439592846732",
+        "cardNumber" : "8916302128573242",
         "status" : "active"
       } ]
     } ]
@@ -3715,10 +3595,7 @@
       "balance" : 736.1704,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "8696843716078966",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Angel",
@@ -3736,7 +3613,7 @@
       "currency" : "RON",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2912280039644439",
+        "cardNumber" : "1733018068262537",
         "status" : "active"
       } ]
     } ]
@@ -3833,7 +3710,7 @@
       "currency" : "AUD",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4729060187716142",
+        "cardNumber" : "6988686155235949",
         "status" : "active"
       } ]
     } ]
@@ -3853,7 +3730,7 @@
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "2803408755782048",
+        "cardNumber" : "5254952026068544",
         "status" : "active"
       } ]
     } ]
@@ -3866,10 +3743,7 @@
       "balance" : 646.1520888888888,
       "currency" : "CAD",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "5069598921863529",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     } ]
   }, {
     "firstName" : "Harrison",
@@ -3892,7 +3766,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2289183361654620",
+        "cardNumber" : "8696843716078966",
         "status" : "active"
       } ]
     } ]
@@ -3916,26 +3790,23 @@
       "balance" : 1419.2971428571427,
       "currency" : "EUR",
       "type" : "classic",
-      "cards" : [ {
-        "cardNumber" : "8916302128573242",
-        "status" : "active"
-      } ]
+      "cards" : [ ]
     }, {
       "IBAN" : "RO93POOB6760303931698665",
       "balance" : 1641.8892,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "0692077318511511",
+        "cardNumber" : "2912280039644439",
         "status" : "active"
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1974.0,
+      "balance" : 1119.1449714285714,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "9295697829422937",
+        "cardNumber" : "2803408755782048",
         "status" : "active"
       } ]
     }, {
@@ -3944,7 +3815,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "8145060794847555",
+        "cardNumber" : "0692077318511511",
         "status" : "active"
       } ]
     }, {
@@ -3953,7 +3824,7 @@
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
-        "cardNumber" : "2107645074675430",
+        "cardNumber" : "4435533800578624",
         "status" : "active"
       } ]
     } ]
@@ -3978,7 +3849,7 @@
       "currency" : "GBP",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1851641428290185",
+        "cardNumber" : "4097439592846732",
         "status" : "active"
       } ]
     }, {
@@ -3987,7 +3858,7 @@
       "currency" : "GBP",
       "type" : "savings",
       "cards" : [ {
-        "cardNumber" : "4435533800578624",
+        "cardNumber" : "4729060187716142",
         "status" : "active"
       } ]
     } ]
@@ -4001,7 +3872,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9281102140265301",
+        "cardNumber" : "2289183361654620",
         "status" : "active"
       } ]
     } ]
@@ -4015,7 +3886,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "8221841196640096",
+        "cardNumber" : "5069598921863529",
         "status" : "active"
       } ]
     }, {
@@ -4041,7 +3912,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6052309891235892",
+        "cardNumber" : "1851641428290185",
         "status" : "active"
       } ]
     } ]
@@ -4055,7 +3926,7 @@
       "currency" : "CHF",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "3892114815135845",
+        "cardNumber" : "9281102140265301",
         "status" : "active"
       } ]
     } ]
@@ -4069,7 +3940,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "9224211293357459",
+        "cardNumber" : "8221841196640096",
         "status" : "active"
       } ]
     } ]
@@ -4083,7 +3954,7 @@
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6825942525318055",
+        "cardNumber" : "6052309891235892",
         "status" : "active"
       } ]
     } ]
@@ -4097,7 +3968,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1388131156990910",
+        "cardNumber" : "3892114815135845",
         "status" : "active"
       } ]
     } ]
@@ -4111,7 +3982,7 @@
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "0755790623339451",
+        "cardNumber" : "9224211293357459",
         "status" : "active"
       } ]
     } ]
@@ -4125,7 +3996,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "2394479558596255",
+        "cardNumber" : "6825942525318055",
         "status" : "active"
       } ]
     } ]
@@ -4139,7 +4010,7 @@
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "7644059707106503",
+        "cardNumber" : "1388131156990910",
         "status" : "active"
       } ]
     } ]
@@ -4153,7 +4024,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "4766425843993312",
+        "cardNumber" : "0755790623339451",
         "status" : "active"
       } ]
     } ]
@@ -4167,7 +4038,7 @@
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "1733018068262537",
+        "cardNumber" : "2394479558596255",
         "status" : "active"
       } ]
     } ]
@@ -4181,7 +4052,7 @@
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "6988686155235949",
+        "cardNumber" : "7644059707106503",
         "status" : "active"
       } ]
     } ]
@@ -4195,7 +4066,7 @@
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
-        "cardNumber" : "5254952026068544",
+        "cardNumber" : "4766425843993312",
         "status" : "active"
       } ]
     } ]

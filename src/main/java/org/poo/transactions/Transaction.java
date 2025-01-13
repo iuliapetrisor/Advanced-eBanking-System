@@ -359,7 +359,8 @@ public final class Transaction {
             transactionNode.put("receiverIBAN", receiverIBAN);
         }
         if (amount != null) {
-            if (description.equals("Card payment") || description.contains("Split payment")) {
+            if (description.equals("Card payment") || description.contains("Split payment")
+                    || description.contains("Cash withdrawal")) {
                 transactionNode.put("amount", Double.parseDouble(amount));
             } else {
                 transactionNode.put("amount", amount);

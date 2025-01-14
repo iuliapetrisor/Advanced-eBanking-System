@@ -360,7 +360,8 @@ public final class Transaction {
         }
         if (amount != null) {
             if (description.equals("Card payment") || description.contains("Split payment")
-                    || description.contains("Cash withdrawal")) {
+                    || description.contains("Cash withdrawal")
+                    || description.equals("Interest rate income")) {
                 transactionNode.put("amount", Double.parseDouble(amount));
             } else {
                 transactionNode.put("amount", amount);

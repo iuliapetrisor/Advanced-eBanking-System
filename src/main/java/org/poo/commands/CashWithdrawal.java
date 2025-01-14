@@ -10,9 +10,6 @@ import org.poo.banksystem.User;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.TransactionManager;
 import org.poo.transactions.Transaction;
-import org.poo.utils.Utils;
-
-import javax.management.StringValueExp;
 import java.util.List;
 
 
@@ -49,12 +46,13 @@ public class CashWithdrawal implements Command {
                 for (Account account : user.getAccounts()) {
                     for (Card card : account.getCards()) {
                         if (card.getCardNumber().equals(command.getCardNumber())) {
-                            if(card.isAlreadyUsed()) {
+                            if (card.isAlreadyUsed()) {
                                 Transaction transaction = new Transaction.Builder()
                                         .timestamp(command.getTimestamp())
                                         .description("Card has already been used")
                                         .build();
-                                transactionManager.addTransactionToUser(user.getEmail(), transaction);
+                                transactionManager.addTransactionToUser(user.getEmail(),
+                                        transaction);
                                 transactionManager.addTransactionToAccount(user.getEmail(),
                                         account.getIBAN(), transaction);
                                 return;
@@ -67,14 +65,16 @@ public class CashWithdrawal implements Command {
                             amountInAccountCurrency += account.getTransactionFee(amountInRon,
                                     amountInAccountCurrency);
 
-                            if (account.getBalance() >= amountInAccountCurrency && card.isActive()) {
+                            if (account.getBalance() >= amountInAccountCurrency
+                                    && card.isActive()) {
                                 account.pay(amountInAccountCurrency);
                                 Transaction transaction = new Transaction.Builder()
                                         .timestamp(command.getTimestamp())
                                         .description("Cash withdrawal of " + amountInRon)
                                         .amount(String.valueOf(amountInRon))
                                         .build();
-                                transactionManager.addTransactionToUser(user.getEmail(), transaction);
+                                transactionManager.addTransactionToUser(user.getEmail(),
+                                        transaction);
                                 transactionManager.addTransactionToAccount(user.getEmail(),
                                         account.getIBAN(), transaction);
 

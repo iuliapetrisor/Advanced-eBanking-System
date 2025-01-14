@@ -19,6 +19,7 @@ public class User {
     private final String birthDate;
     private final String occupation;
     private List<Account> accounts;
+    private String planType;
     private List<Transaction> transactions;
     private Map<String, String> aliases = new HashMap<>();
 
@@ -40,6 +41,11 @@ public class User {
         this.occupation = occupation;
         this.accounts = new ArrayList<>();
         this.transactions = new ArrayList<>();
+        if (occupation.equals("student")) {
+            this.planType = "student";
+        } else {
+            this.planType = "standard";
+        }
     }
 
     /**
@@ -55,6 +61,11 @@ public class User {
         this.occupation = userInput.getOccupation();
         this.accounts = new ArrayList<>();
         this.transactions = new ArrayList<>();
+        if (occupation.equals("student")) {
+            this.planType = "student";
+        } else {
+            this.planType = "standard";
+        }
     }
 
     /**
@@ -109,6 +120,24 @@ public class User {
      */
     public List<Account> getAccounts() {
         return accounts;
+    }
+
+    /**
+     * Setter for the plan type.
+     *
+     * @param planType the plan type
+     */
+    public void setPlanType(final String planType) {
+        this.planType = planType;
+    }
+
+    /**
+     * Getter for the plan type.
+     *
+     * @return the plan type
+     */
+    public String getPlanType() {
+        return planType;
     }
 
     /**

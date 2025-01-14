@@ -45,11 +45,7 @@ public class AddAccount implements Command {
                     account = new Account(iban, 0.0, command.getCurrency(),
                             command.getAccountType());
                 }
-                if (user.isStudent()) {
-                    account.setPlanType("student");
-                } else {
-                    account.setPlanType("standard");
-                }
+                account.setPlanType(user.getPlanType());
                 user.addAccount(account);
                 Transaction transaction = new Transaction.Builder()
                         .timestamp(command.getTimestamp())

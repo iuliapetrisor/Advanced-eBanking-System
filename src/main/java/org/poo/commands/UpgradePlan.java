@@ -91,6 +91,7 @@ public class UpgradePlan implements Command {
                     }
 
                     account.pay(feeInAccountCurrency);
+                    user.setPlanType(newPlanType);
                     for (Account acc : user.getAccounts()) {
                         acc.setPlanType(newPlanType);
                     }

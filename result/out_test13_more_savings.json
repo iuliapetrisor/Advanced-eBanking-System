@@ -423,6 +423,11 @@
     }, {
       "timestamp" : 223,
       "description" : "Interest rate of the account changed to 0.17"
+    }, {
+      "timestamp" : 224,
+      "description" : "Interest rate income",
+      "amount" : 586.6700000000001,
+      "currency" : "RON"
     } ]
   }
 }, {
@@ -512,6 +517,11 @@
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
+  }, {
+    "timestamp" : 224,
+    "description" : "Interest rate income",
+    "amount" : 586.6700000000001,
+    "currency" : "RON"
   }, {
     "timestamp" : 227,
     "description" : "Split payment of 1423.00 RON",
@@ -639,6 +649,11 @@
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
+  }, {
+    "timestamp" : 224,
+    "description" : "Interest rate income",
+    "amount" : 586.6700000000001,
+    "currency" : "RON"
   }, {
     "timestamp" : 227,
     "description" : "Split payment of 1423.00 RON",
@@ -846,6 +861,11 @@
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
   }, {
+    "timestamp" : 224,
+    "description" : "Interest rate income",
+    "amount" : 586.6700000000001,
+    "currency" : "RON"
+  }, {
     "timestamp" : 227,
     "description" : "Split payment of 1423.00 RON",
     "amount" : 355.75,
@@ -1005,6 +1025,16 @@
     "transactions" : [ {
       "timestamp" : 253,
       "description" : "New account created"
+    }, {
+      "timestamp" : 272,
+      "description" : "Interest rate income",
+      "amount" : 1.12,
+      "currency" : "USD"
+    }, {
+      "timestamp" : 377,
+      "description" : "Interest rate income",
+      "amount" : 1.1424,
+      "currency" : "USD"
     }, {
       "timestamp" : 378,
       "description" : "Interest rate of the account changed to 0.35"
@@ -1771,6 +1801,11 @@
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
+  }, {
+    "timestamp" : 224,
+    "description" : "Interest rate income",
+    "amount" : 586.6700000000001,
+    "currency" : "RON"
   }, {
     "timestamp" : 227,
     "description" : "Split payment of 1423.00 RON",

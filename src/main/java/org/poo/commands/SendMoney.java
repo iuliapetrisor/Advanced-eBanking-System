@@ -83,13 +83,13 @@ public class SendMoney implements Command {
             return;
         }
 
-        if(senderAccount != null && receiverAccount == null) {
+        if (senderAccount != null && receiverAccount == null) {
             for (Commerciant commerciant : commerciants) {
                 if (commerciant.getAccount().equals(receiverIBAN)) {
                     double amountInRon = exchangeRateManager.convert(
                             command.getAmount(), senderAccount.getCurrency(), "RON");
-                    double amount = command.getAmount() +
-                            senderAccount.getTransactionFee(amountInRon, command.getAmount());
+                    double amount = command.getAmount()
+                            + senderAccount.getTransactionFee(amountInRon, command.getAmount());
                     if (senderAccount.getBalance() >= amount) {
                         senderAccount.pay(amount);
                         Transaction transaction = new Transaction.Builder()

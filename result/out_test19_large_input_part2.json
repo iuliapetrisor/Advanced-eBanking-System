@@ -2470,7 +2470,7 @@
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 870.0,
+      "balance" : 940.0,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -2559,7 +2559,7 @@
       } ]
     }, {
       "IBAN" : "RO45POOB6505529013808948",
-      "balance" : 7081.46222222222,
+      "balance" : 7159.239999999998,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]
@@ -3248,7 +3248,7 @@
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1119.1449714285714,
+      "balance" : 1189.1449714285714,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -3337,7 +3337,7 @@
       } ]
     }, {
       "IBAN" : "RO45POOB6505529013808948",
-      "balance" : 19228.46222222222,
+      "balance" : 19306.239999999998,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]
@@ -3802,7 +3802,7 @@
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1119.1449714285714,
+      "balance" : 1189.1449714285714,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -3891,7 +3891,7 @@
       } ]
     }, {
       "IBAN" : "RO45POOB6505529013808948",
-      "balance" : 19228.46222222222,
+      "balance" : 19306.239999999998,
       "currency" : "USD",
       "type" : "business",
       "cards" : [ ]

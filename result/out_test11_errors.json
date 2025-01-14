@@ -571,7 +571,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO71POOB1634969878734749",
-      "balance" : 109.0,
+      "balance" : 209.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -827,7 +827,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO71POOB1634969878734749",
-      "balance" : 109.0,
+      "balance" : 209.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -1097,7 +1097,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO71POOB1634969878734749",
-      "balance" : 109.0,
+      "balance" : 209.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -1360,7 +1360,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO71POOB1634969878734749",
-      "balance" : 109.0,
+      "balance" : 209.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -1568,7 +1568,7 @@
       } ]
     }, {
       "IBAN" : "RO52POOB6271107854467609",
-      "balance" : 841.6,
+      "balance" : 842.2,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
@@ -1625,7 +1625,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO71POOB1634969878734749",
-      "balance" : 109.0,
+      "balance" : 209.0,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]

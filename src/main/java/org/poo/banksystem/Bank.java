@@ -101,7 +101,7 @@ public class Bank {
         splitPayment = new SplitPayment(users, exchangeRateManager, transactionManager);
         report = new Report(users);
         spendingsReport = new SpendingsReport(users);
-        addInterest = new AddInterest(users);
+        addInterest = new AddInterest(users, transactionManager);
         changeInterestRate = new ChangeInterestRate(users, transactionManager);
         withdrawSavings = new WithdrawSavings(users, exchangeRateManager, transactionManager);
         upgradePlan = new UpgradePlan(users, exchangeRateManager, transactionManager);

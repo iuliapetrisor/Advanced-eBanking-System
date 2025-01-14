@@ -826,6 +826,11 @@
     "currency" : "USD",
     "involvedAccounts" : [ "RO90POOB5450777208072365", "RO30POOB9523423715747796", "RO58POOB2721178218599590", "RO96POOB6738272785416988", "RO37POOB7013767509830666", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO69POOB6209498372540635", "RO69POOB9846198978826791", "RO79POOB3616857825600958" ],
     "error" : "Account RO79POOB3616857825600958 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 225,
+    "description" : "Interest rate income",
+    "amount" : 30.900000000000002,
+    "currency" : "RON"
   } ]
 }, {
   "command" : "printTransactions",
@@ -856,6 +861,11 @@
     "currency" : "USD",
     "involvedAccounts" : [ "RO96POOB6738272785416988", "RO58POOB2721178218599590", "RO33POOB4049920806186500", "RO69POOB9846198978826791", "RO30POOB9523423715747796", "RO37POOB7013767509830666", "RO69POOB6209498372540635", "RO58POOB7344468893732422", "RO00POOB5687892910835215", "RO76POOB4035116042454483" ],
     "error" : "Account RO76POOB4035116042454483 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 227,
+    "description" : "Interest rate income",
+    "amount" : 24.02,
+    "currency" : "RON"
   } ]
 }, {
   "command" : "printTransactions",
@@ -886,6 +896,11 @@
     "currency" : "USD",
     "involvedAccounts" : [ "RO96POOB6738272785416988", "RO58POOB2721178218599590", "RO33POOB4049920806186500", "RO69POOB9846198978826791", "RO30POOB9523423715747796", "RO37POOB7013767509830666", "RO69POOB6209498372540635", "RO58POOB7344468893732422", "RO00POOB5687892910835215", "RO76POOB4035116042454483" ],
     "error" : "Account RO76POOB4035116042454483 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 227,
+    "description" : "Interest rate income",
+    "amount" : 24.02,
+    "currency" : "RON"
   }, {
     "timestamp" : 229,
     "description" : "Savings withdrawal"
@@ -919,6 +934,11 @@
     "currency" : "USD",
     "involvedAccounts" : [ "RO96POOB6738272785416988", "RO58POOB2721178218599590", "RO33POOB4049920806186500", "RO69POOB9846198978826791", "RO30POOB9523423715747796", "RO37POOB7013767509830666", "RO69POOB6209498372540635", "RO58POOB7344468893732422", "RO00POOB5687892910835215", "RO76POOB4035116042454483" ],
     "error" : "Account RO76POOB4035116042454483 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 231,
+    "description" : "Interest rate income",
+    "amount" : 360.88,
+    "currency" : "RON"
   } ]
 }, {
   "command" : "printTransactions",
@@ -949,6 +969,11 @@
     "currency" : "USD",
     "involvedAccounts" : [ "RO96POOB6738272785416988", "RO58POOB2721178218599590", "RO33POOB4049920806186500", "RO69POOB9846198978826791", "RO30POOB9523423715747796", "RO37POOB7013767509830666", "RO69POOB6209498372540635", "RO58POOB7344468893732422", "RO00POOB5687892910835215", "RO76POOB4035116042454483" ],
     "error" : "Account RO76POOB4035116042454483 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 231,
+    "description" : "Interest rate income",
+    "amount" : 360.88,
+    "currency" : "RON"
   }, {
     "timestamp" : 233,
     "description" : "Savings withdrawal"
@@ -989,6 +1014,11 @@
     "currency" : "USD",
     "involvedAccounts" : [ "RO96POOB6738272785416988", "RO58POOB2721178218599590", "RO33POOB4049920806186500", "RO69POOB9846198978826791", "RO30POOB9523423715747796", "RO37POOB7013767509830666", "RO69POOB6209498372540635", "RO58POOB7344468893732422", "RO00POOB5687892910835215", "RO76POOB4035116042454483" ],
     "error" : "Account RO76POOB4035116042454483 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 235,
+    "description" : "Interest rate income",
+    "amount" : 473.40000000000003,
+    "currency" : "USD"
   } ]
 }, {
   "error" : "Invalid command"
@@ -1014,6 +1044,11 @@
     "currency" : "USD",
     "involvedAccounts" : [ "RO90POOB5450777208072365", "RO30POOB9523423715747796", "RO58POOB2721178218599590", "RO96POOB6738272785416988", "RO37POOB7013767509830666", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO69POOB6209498372540635", "RO69POOB9846198978826791", "RO79POOB3616857825600958" ],
     "error" : "Account RO79POOB3616857825600958 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 225,
+    "description" : "Interest rate income",
+    "amount" : 30.900000000000002,
+    "currency" : "RON"
   }, {
     "timestamp" : 237,
     "description" : "Split payment of 2479.10 EUR",

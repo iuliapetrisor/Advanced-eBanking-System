@@ -2793,6 +2793,11 @@
     "timestamp" : 479,
     "description" : "New account created"
   }, {
+    "timestamp" : 481,
+    "description" : "Interest rate income",
+    "amount" : 290.16,
+    "currency" : "NZD"
+  }, {
     "timestamp" : 482,
     "description" : "You don't have the minimum age required."
   }, {
@@ -3763,7 +3768,7 @@
       } ]
     }, {
       "IBAN" : "RO53POOB7122855990652257",
-      "balance" : 288.4322907999997,
+      "balance" : 289.44133749999986,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -4184,7 +4189,7 @@
       } ]
     }, {
       "IBAN" : "RO53POOB7122855990652257",
-      "balance" : 288.4322907999997,
+      "balance" : 289.44133749999986,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {

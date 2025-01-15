@@ -1581,8 +1581,7 @@
     "cardHolder" : "Hulda_Kaiser@outlook.ch"
   }, {
     "timestamp" : 554,
-    "description" : "Insufficient funds",
-    "accountIBAN" : "RO32POOB0130532963818359"
+    "description" : "Insufficient funds"
   } ]
 }, {
   "error" : "Invalid command"

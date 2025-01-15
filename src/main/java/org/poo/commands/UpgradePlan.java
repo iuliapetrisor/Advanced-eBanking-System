@@ -82,7 +82,6 @@ public class UpgradePlan implements Command {
                         Transaction transaction = new Transaction.Builder()
                                 .timestamp(timestamp)
                                 .description("Insufficient funds")
-                                .accountIBAN(accountIBAN)
                                 .build();
                         transactionManager.addTransactionToUser(user.getEmail(), transaction);
                         transactionManager.addTransactionToAccount(user.getEmail(), accountIBAN,
@@ -109,9 +108,13 @@ public class UpgradePlan implements Command {
                 }
             }
         }
-        ObjectNode outputNode = output.addObject();
-        outputNode.put("error", "Account not found");
-        outputNode.put("timestamp", timestamp);
+        ObjectNode commandNode = objectMapper.createObjectNode();
+        commandNode.put("command", "upgradePlan");
+        commandNode.put("timestamp", timestamp);
+        commandNode.putObject("output")
+                .put("description", "Account not found")
+                .put("timestamp", timestamp);
+        output.add(commandNode);
 
     }
 

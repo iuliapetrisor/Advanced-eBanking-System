@@ -62,8 +62,12 @@
     "timestamp" : 555
   }
 }, {
-  "error" : "Account not found",
-  "timestamp" : 560
+  "command" : "upgradePlan",
+  "timestamp" : 560,
+  "output" : {
+    "description" : "Account not found",
+    "timestamp" : 560
+  }
 }, {
   "command" : "printTransactions",
   "timestamp" : 565,
@@ -75,8 +79,7 @@
     "description" : "New account created"
   }, {
     "timestamp" : 562,
-    "description" : "Insufficient funds",
-    "accountIBAN" : "RO53POOB7122855990652257"
+    "description" : "Insufficient funds"
   }, {
     "timestamp" : 564,
     "description" : "Upgrade plan",

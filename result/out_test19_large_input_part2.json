@@ -84,7 +84,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 239.98523076923075,
+      "balance" : 239.98523076923072,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
@@ -1000,7 +1000,7 @@
     "email" : "Angel_Ene@hotmail.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 48.184,
+      "balance" : 48.18399999999997,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
@@ -1023,7 +1023,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 115.5407863247863,
+      "balance" : 115.54078632478627,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
@@ -1546,7 +1546,7 @@
     "email" : "Angel_Ene@hotmail.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 48.184,
+      "balance" : 48.18399999999997,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ {
@@ -1569,7 +1569,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 115.5407863247863,
+      "balance" : 115.54078632478627,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ {
@@ -2271,7 +2271,7 @@
     "email" : "Angel_Ene@hotmail.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 48.184,
+      "balance" : 48.18399999999997,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -2291,7 +2291,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 115.5407863247863,
+      "balance" : 115.54078632478627,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ ]
@@ -3049,7 +3049,7 @@
     "email" : "Angel_Ene@hotmail.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 48.184,
+      "balance" : 48.18399999999997,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -3069,7 +3069,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 115.5407863247863,
+      "balance" : 115.54078632478627,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ ]
@@ -3248,7 +3248,7 @@
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1189.1449714285714,
+      "balance" : 1189.4075314285712,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -3603,7 +3603,7 @@
     "email" : "Angel_Ene@hotmail.ro",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 48.184,
+      "balance" : 48.18399999999997,
       "currency" : "RON",
       "type" : "classic",
       "cards" : [ ]
@@ -3623,7 +3623,7 @@
     "email" : "Karen_McIsaac@zoho.nz",
     "accounts" : [ {
       "IBAN" : "RO76POOB4035116042454483",
-      "balance" : 115.5407863247863,
+      "balance" : 115.54078632478627,
       "currency" : "NZD",
       "type" : "classic",
       "cards" : [ ]
@@ -3802,7 +3802,7 @@
       } ]
     }, {
       "IBAN" : "RO04POOB3492426980939341",
-      "balance" : 1189.1449714285714,
+      "balance" : 1189.4075314285712,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -4124,7 +4124,7 @@
   "timestamp" : 1031,
   "output" : {
     "IBAN" : "RO58POOB2721178218599590",
-    "balance" : 48.184,
+    "balance" : 48.18399999999997,
     "currency" : "RON",
     "transactions" : [ ],
     "commerciants" : [ ]
@@ -4134,7 +4134,7 @@
   "timestamp" : 1032,
   "output" : {
     "IBAN" : "RO76POOB4035116042454483",
-    "balance" : 115.5407863247863,
+    "balance" : 115.54078632478627,
     "currency" : "NZD",
     "transactions" : [ {
       "timestamp" : 292,

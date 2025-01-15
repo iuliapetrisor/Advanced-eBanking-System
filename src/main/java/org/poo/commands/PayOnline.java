@@ -59,13 +59,12 @@ public class PayOnline implements Command {
                             double amountInAccountCurrency = exchangeRateManager.convert(
                                     command.getAmount(), command.getCurrency(),
                                     account.getCurrency());
-
-                            if (account.getBalance() >=  amountInAccountCurrency && card.isActive()
-                                    && account.getBalance() - amountInAccountCurrency
+                            double totalAmount = amountInAccountCurrency + account.getTransactionFee(amountInRon,
+                                    amountInAccountCurrency);
+                            if (account.getBalance() >=  totalAmount && card.isActive()
+                                    && account.getBalance() - totalAmount
                                     >= account.getMinBalance()) {
-                                account.pay(amountInAccountCurrency);
-                                account.pay(account.getTransactionFee(amountInRon,
-                                        amountInAccountCurrency));
+                                account.pay(totalAmount);
                                 Transaction transaction = new Transaction.Builder()
                                         .timestamp(command.getTimestamp())
                                         .description("Card payment")
@@ -81,6 +80,12 @@ public class PayOnline implements Command {
                                         .getCommerciant());
                                 if (commerciant == null) {
                                     return;
+                                }
+                                if(account.hasDiscount(commerciant.getType())) {
+                                    double discount = account.getDiscount(commerciant.getType())
+                                            * amountInAccountCurrency;
+                                    account.addFunds(discount);
+                                    account.getDiscounts().remove(commerciant.getType());
                                 }
                                 double cashback = account
                                         .processTransactionStrategy(amountInAccountCurrency,

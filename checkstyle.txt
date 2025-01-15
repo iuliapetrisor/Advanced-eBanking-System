@@ -1,2 +1,9 @@
 Starting audit...
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:62: Line is longer than 100 characters (found 113). [LineLength]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:84:33: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:84:33: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:106:25: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:106:25: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:138: Line is longer than 100 characters (found 112). [LineLength]
 Audit done.
+Checkstyle ends with 6 errors.

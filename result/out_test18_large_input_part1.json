@@ -3768,7 +3768,7 @@
       } ]
     }, {
       "IBAN" : "RO53POOB7122855990652257",
-      "balance" : 289.44133749999986,
+      "balance" : 289.4433354999998,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -4189,7 +4189,7 @@
       } ]
     }, {
       "IBAN" : "RO53POOB7122855990652257",
-      "balance" : 289.44133749999986,
+      "balance" : 289.4433354999998,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {

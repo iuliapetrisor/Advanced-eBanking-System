@@ -1756,7 +1756,7 @@
     "email" : "Emilio_Camiscione-Rugger@hushmail.it",
     "accounts" : [ {
       "IBAN" : "RO30POOB9523423715747796",
-      "balance" : 1784.1944615384616,
+      "balance" : 1784.1944615384614,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -2618,7 +2618,7 @@
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 3288.9814285714283,
+      "balance" : 3301.2614285714285,
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
@@ -2736,7 +2736,7 @@
     "email" : "Emilio_Camiscione-Rugger@hushmail.it",
     "accounts" : [ {
       "IBAN" : "RO30POOB9523423715747796",
-      "balance" : 1784.1944615384616,
+      "balance" : 1784.1944615384614,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -3217,7 +3217,7 @@
       } ]
     }, {
       "IBAN" : "RO01POOB9893132718323396",
-      "balance" : 120.0,
+      "balance" : 121.11249999999995,
       "currency" : "EUR",
       "type" : "savings",
       "cards" : [ {
@@ -3231,7 +3231,7 @@
   "timestamp" : 881,
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 3288.9814285714283,
+    "balance" : 3301.2614285714285,
     "currency" : "CAD",
     "transactions" : [ {
       "timestamp" : 620,

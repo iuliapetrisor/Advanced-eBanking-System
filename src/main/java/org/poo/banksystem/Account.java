@@ -201,6 +201,15 @@ public class Account {
     }
 
     /**
+     * Getter for the discounts.
+     *
+     * @return the discounts
+     */
+    public Map<String, Double> getDiscounts() {
+        return discounts;
+    }
+
+    /**
      * Getter for the transaction fee.
      *
      * @param amount the amount of the transaction
@@ -262,6 +271,16 @@ public class Account {
      */
     public boolean hasDiscount(final String category) {
         return discounts.getOrDefault(category, 0.0) > 0;
+    }
+
+    /**
+     * Getter for the discount of a certain category of commerciants.
+     *
+     * @param category the category of the commerciant
+     * @return the discount
+     */
+    public double getDiscount(final String category) {
+        return discounts.get(category);
     }
 
     /**

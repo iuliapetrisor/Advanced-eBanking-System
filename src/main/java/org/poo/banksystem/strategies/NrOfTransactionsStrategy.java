@@ -9,6 +9,17 @@ public class NrOfTransactionsStrategy implements CashbackStrategy {
     public static final double TWO_TRANSACTIONS = 2;
     public static final double FIVE_TRANSACTIONS = 5;
     public static final double TEN_TRANSACTIONS = 10;
+    private String commerciant;
+
+    /**
+     * Constructor for the NrOfTransactionsStrategy class.
+     *
+     * @param commerciant the commerciant's name
+     */
+    public NrOfTransactionsStrategy(final String commerciant) {
+        this.commerciant = commerciant;
+    }
+
     /**
      * Calculates the cashback for the account based on the number of transactions.
      *
@@ -17,14 +28,14 @@ public class NrOfTransactionsStrategy implements CashbackStrategy {
      */
     @Override
     public double calculateCashback(final Account account) {
-        int transactions = account.getNrOfTransactionsForCashback();
-        if (transactions >= TEN_TRANSACTIONS) {
+        int transactions = account.getNrTransactionsPerCommerciant().get(commerciant);
+        if (transactions == TEN_TRANSACTIONS) {
             account.setDiscount("Tech", TECH_CASHBACK);
             return 0;
-        } else if (transactions >= FIVE_TRANSACTIONS) {
+        } else if (transactions == FIVE_TRANSACTIONS) {
             account.setDiscount("Clothes", CLOTHES_CASHBACK);
             return 0;
-        } else if (transactions >= TWO_TRANSACTIONS) {
+        } else if (transactions == TWO_TRANSACTIONS) {
             account.setDiscount("Food", FOOD_CASHBACK);
             return 0;
         }

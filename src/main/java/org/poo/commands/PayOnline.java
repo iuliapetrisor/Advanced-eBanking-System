@@ -89,9 +89,24 @@ public class PayOnline implements Command {
                                 }
                                 double cashback = account
                                         .processTransactionStrategy(amountInAccountCurrency,
-                                        amountInRon, commerciant.getCashbackStrategyName());
+                                        amountInRon, commerciant);
                                 if (cashback > 0) {
                                     account.addFunds(cashback);
+                                }
+                                if (user.getPlanType().equals("silver") && amountInRon >= 300) {
+                                    user.incrementSilverTransactions();
+                                    if (user.getSilverTransactions() == 5) {
+                                        user.setPlanTypeForAllAccounts("gold");
+                                        Transaction transactionUpgrade = new Transaction.Builder()
+                                                .timestamp(command.getTimestamp())
+                                                .description("Upgrade plan")
+                                                .accountIBAN(account.getIBAN())
+                                                .newPlanType("gold")
+                                                .build();
+                                        transactionManager.addTransactionToUser(user.getEmail(), transactionUpgrade);
+                                        transactionManager.addTransactionToAccount(user.getEmail(),
+                                                account.getIBAN(), transaction);
+                                    }
                                 }
                                 if (card.isOneTime()) {
                                     transaction = new Transaction.Builder()

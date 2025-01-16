@@ -21,6 +21,7 @@ public class User {
     private List<Account> accounts;
     private String planType;
     private List<Transaction> transactions;
+    private int silverTransactions = 0;
     private Map<String, String> aliases = new HashMap<>();
 
     /**
@@ -132,6 +133,18 @@ public class User {
     }
 
     /**
+     * Setter for the plan type for all accounts.
+     *
+     * @param planType the plan type
+     */
+    public void setPlanTypeForAllAccounts(final String planType) {
+        for (Account account : accounts) {
+            account.setPlanType(planType);
+        }
+        this.planType = planType;
+    }
+
+    /**
      * Getter for the plan type.
      *
      * @return the plan type
@@ -222,5 +235,21 @@ public class User {
      */
     public boolean isStudent() {
         return occupation.equals("student");
+    }
+
+    /**
+     * Getter for the number of silver transactions.
+     *
+     * @return the number of silver transactions
+     */
+    public int getSilverTransactions() {
+        return silverTransactions;
+    }
+
+    /**
+     * Increments the number of silver transactions.
+     */
+    public void incrementSilverTransactions() {
+        silverTransactions++;
     }
 }

@@ -23,8 +23,8 @@ public class Account {
     private List<Transaction> transactions;
     private String planType;
     private AccountPlan accountPlan;
-    private int nrOfTransactionsForCashback = 0;
     private double totalSpendingsForCashback = 0.0;
+    private Map<String, Integer> nrTransactionsPerCommerciant = new HashMap<>();
     private Map<String, Double> discounts = new HashMap<>();
 
     /**
@@ -210,6 +210,15 @@ public class Account {
     }
 
     /**
+     * Getter for the number of transactions per commerciant.
+     *
+     * @return the number of transactions per commerciant
+     */
+    public Map<String, Integer> getNrTransactionsPerCommerciant() {
+        return nrTransactionsPerCommerciant;
+    }
+
+    /**
      * Getter for the transaction fee.
      *
      * @param amount the amount of the transaction
@@ -217,15 +226,6 @@ public class Account {
      */
     public double getTransactionFee(final double amountInRon, final double amount) {
         return accountPlan.getTransactionFee(amountInRon, amount);
-    }
-
-    /**
-     * Getter for the total number of transactions made to
-     * commerciants with the nrOfTransactions cashback strategy.
-     * @return the number of transactions`
-     */
-    public int getNrOfTransactionsForCashback() {
-        return nrOfTransactionsForCashback;
     }
 
 
@@ -244,16 +244,19 @@ public class Account {
      *
      * @param transactionAmount the amount paid for the transaction
      * @param amountInRon   the amount paid for the transaction in RON
-     * @param strategy the cashback strategy to be used
+     * @param commerciant   the commerciant
      * @return the cashback amount
      */
     public double processTransactionStrategy(final double transactionAmount,
                                              final double amountInRon,
-                                             final String strategy) {
+                                             final Commerciant commerciant) {
+        String commerciantName = commerciant.getName();
+        String strategy = commerciant.getCashbackStrategyName();
         CashbackStrategy cashbackStrategy;
         if (strategy.equals("nrOfTransactions")) {
-            this.nrOfTransactionsForCashback++;
-            cashbackStrategy = new NrOfTransactionsStrategy();
+            nrTransactionsPerCommerciant.putIfAbsent(commerciantName, 0);
+            nrTransactionsPerCommerciant.put(commerciantName, nrTransactionsPerCommerciant.get(commerciantName) + 1);
+            cashbackStrategy = new NrOfTransactionsStrategy(commerciantName);
             return cashbackStrategy.calculateCashback(this);
         } else if (strategy.equals("spendingThreshold")) {
             this.totalSpendingsForCashback += amountInRon;
@@ -270,7 +273,7 @@ public class Account {
      * @return true if the category has a discount, false otherwise
      */
     public boolean hasDiscount(final String category) {
-        return discounts.getOrDefault(category, 0.0) > 0;
+        return discounts.getOrDefault(category, 0.0) > 0.0;
     }
 
     /**

@@ -2617,7 +2617,7 @@
     "email" : "Jennifer_Gould@mail.com.ca",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 3301.2614285714285,
+      "balance" : 3294.3814285714284,
       "currency" : "CAD",
       "type" : "classic",
       "cards" : [ {
@@ -3230,7 +3230,7 @@
   "timestamp" : 881,
   "output" : {
     "IBAN" : "RO58POOB7344468893732422",
-    "balance" : 3301.2614285714285,
+    "balance" : 3294.3814285714284,
     "currency" : "CAD",
     "transactions" : [ {
       "timestamp" : 620,

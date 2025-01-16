@@ -561,7 +561,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -775,7 +775,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -845,7 +845,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 3001.834444444444,
+      "balance" : 2984.8844444444444,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -989,7 +989,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1059,7 +1059,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 6044.332888888889,
+      "balance" : 5930.622222222221,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -1203,7 +1203,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1273,7 +1273,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 5959.8928888888895,
+      "balance" : 5846.182222222222,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -1417,7 +1417,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1487,7 +1487,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 5959.8928888888895,
+      "balance" : 5846.182222222222,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -1766,7 +1766,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -1836,7 +1836,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 5959.8928888888895,
+      "balance" : 5846.182222222222,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -1980,7 +1980,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -2050,7 +2050,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 7048.785111111112,
+      "balance" : 6935.074444444444,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -2194,7 +2194,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -2264,7 +2264,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 7048.785111111112,
+      "balance" : 6935.074444444444,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {
@@ -2390,6 +2390,11 @@
     "amount" : 99.0,
     "commerciant" : "KFC"
   }, {
+    "timestamp" : 509,
+    "description" : "Upgrade plan",
+    "accountIBAN" : "RO65POOB8944016386845896",
+    "newPlanType" : "gold"
+  }, {
     "timestamp" : 517,
     "description" : "Card payment",
     "amount" : 20.0,
@@ -2492,7 +2497,7 @@
     "email" : "Jeannine_de_Evrard@yahoo.fr",
     "accounts" : [ {
       "IBAN" : "RO65POOB8944016386845896",
-      "balance" : 1356.2399999999998,
+      "balance" : 1356.28,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -2576,7 +2581,7 @@
     "email" : "Nathalie_Marchand@hotmail.fr",
     "accounts" : [ {
       "IBAN" : "RO79POOB3616857825600958",
-      "balance" : 1461.8005,
+      "balance" : 1443.94,
       "currency" : "EUR",
       "type" : "classic",
       "cards" : [ {
@@ -2646,7 +2651,7 @@
     "email" : "Jeffrey_Gonzales@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO98POOB8412955460158769",
-      "balance" : 7048.785111111112,
+      "balance" : 6935.074444444444,
       "currency" : "USD",
       "type" : "classic",
       "cards" : [ {

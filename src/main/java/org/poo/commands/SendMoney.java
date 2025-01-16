@@ -111,7 +111,7 @@ public class SendMoney implements Command {
                         }
                         double cashback = senderAccount
                                 .processTransactionStrategy(command.getAmount(),
-                                        amountInRon, commerciant.getCashbackStrategyName());
+                                        amountInRon, commerciant);
                         if (cashback > 0) {
                             senderAccount.addFunds(cashback);
                         }

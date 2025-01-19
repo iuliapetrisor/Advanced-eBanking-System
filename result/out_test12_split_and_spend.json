@@ -161,8 +161,6 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "printUsers",
   "timestamp" : 149,
   "output" : [ {
@@ -325,7 +323,12 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "rejectSplitPayment",
+  "timestamp" : 204,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 204
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 205,
@@ -358,7 +361,7 @@
     "involvedAccounts" : [ "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
     "splitPaymentType" : "custom",
     "amountForUsers" : [ 1123.5, 211.0, 912.0, 575.1 ],
-    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment."
+    "error" : "One user rejected the payment."
   }, {
     "timestamp" : 150,
     "description" : "Split payment of 4937.11 EUR",
@@ -367,6 +370,13 @@
     "splitPaymentType" : "custom",
     "amountForUsers" : [ 611.0, 1490.0, 1007.78, 573.33, 714.44, 405.56, 135.0 ],
     "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment."
+  }, {
+    "timestamp" : 151,
+    "description" : "Split payment of 7196.53 RON",
+    "currency" : "RON",
+    "involvedAccounts" : [ "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO37POOB7013767509830666", "RO58POOB7344468893732422", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "amountForUsers" : [ 1010.0, 1577.2, 1093.33, 836.67, 1068.0, 1033.33, 578.0 ]
   }, {
     "timestamp" : 184,
     "description" : "Card payment",
@@ -393,6 +403,13 @@
     "transferType" : "received"
   } ]
 }, {
+  "command" : "acceptSplitPayment",
+  "timestamp" : 210,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 210
+  }
+}, {
   "command" : "printTransactions",
   "timestamp" : 212,
   "output" : [ {
@@ -411,7 +428,7 @@
     "involvedAccounts" : [ "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO58POOB7344468893732422", "RO69POOB6209498372540635" ],
     "splitPaymentType" : "custom",
     "amountForUsers" : [ 1123.5, 211.0, 912.0, 575.1 ],
-    "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment."
+    "error" : "One user rejected the payment."
   }, {
     "timestamp" : 150,
     "description" : "Split payment of 4937.11 EUR",
@@ -421,12 +438,20 @@
     "amountForUsers" : [ 611.0, 1490.0, 1007.78, 573.33, 714.44, 405.56, 135.0 ],
     "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment."
   }, {
+    "timestamp" : 151,
+    "description" : "Split payment of 7196.53 RON",
+    "currency" : "RON",
+    "involvedAccounts" : [ "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO37POOB7013767509830666", "RO58POOB7344468893732422", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "amountForUsers" : [ 1010.0, 1577.2, 1093.33, 836.67, 1068.0, 1033.33, 578.0 ]
+  }, {
     "timestamp" : 152,
     "description" : "Split payment of 4411.00 EUR",
     "amount" : 735.1666666666666,
     "currency" : "EUR",
     "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ],
-    "splitPaymentType" : "equal"
+    "splitPaymentType" : "equal",
+    "error" : "Account RO58POOB7344468893732422 has insufficient funds for a split payment."
   }, {
     "timestamp" : 165,
     "description" : "Cash withdrawal of 420.0",
@@ -447,8 +472,17 @@
     "commerciant" : "Zara"
   }, {
     "timestamp" : 211,
-    "description" : "Insufficient funds"
+    "description" : "Card payment",
+    "amount" : 235.55555555555557,
+    "commerciant" : "Apple"
   } ]
+}, {
+  "command" : "acceptSplitPayment",
+  "timestamp" : 216,
+  "output" : {
+    "description" : "User not found",
+    "timestamp" : 216
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 217,
@@ -483,12 +517,20 @@
     "amountForUsers" : [ 611.0, 1490.0, 1007.78, 573.33, 714.44, 405.56, 135.0 ],
     "error" : "Account RO65POOB8944016386845896 has insufficient funds for a split payment."
   }, {
+    "timestamp" : 151,
+    "description" : "Split payment of 7196.53 RON",
+    "currency" : "RON",
+    "involvedAccounts" : [ "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO37POOB7013767509830666", "RO58POOB7344468893732422", "RO65POOB8944016386845896", "RO90POOB5450777208072365", "RO69POOB6209498372540635" ],
+    "splitPaymentType" : "custom",
+    "amountForUsers" : [ 1010.0, 1577.2, 1093.33, 836.67, 1068.0, 1033.33, 578.0 ]
+  }, {
     "timestamp" : 152,
     "description" : "Split payment of 4411.00 EUR",
     "amount" : 735.1666666666666,
     "currency" : "EUR",
     "involvedAccounts" : [ "RO79POOB3616857825600958", "RO76POOB4035116042454483", "RO58POOB7344468893732422", "RO58POOB2721178218599590", "RO90POOB5450777208072365", "RO37POOB7013767509830666" ],
-    "splitPaymentType" : "equal"
+    "splitPaymentType" : "equal",
+    "error" : "Account RO58POOB7344468893732422 has insufficient funds for a split payment."
   }, {
     "timestamp" : 162,
     "description" : "Upgrade plan",

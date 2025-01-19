@@ -1,5 +1,6 @@
 Starting audit...
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/AcceptSplitPayment.java:41:5: Method execute length is 154 lines (max allowed is 150). [MethodLength]
 [ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SplitPayment.java:20:50: Variable 'splitPayments' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:49:5: Method execute length is 152 lines (max allowed is 150). [MethodLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 3 errors.

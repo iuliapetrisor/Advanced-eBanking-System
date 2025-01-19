@@ -266,4 +266,17 @@ public class User {
         }
         return -1;
     }
+
+    /**
+     * Rejects the first pending split payment.
+     */
+    public int rejectFirstPendingSplitPayment() {
+        for (Map.Entry<Integer, String> entry : splitPaymentResponses.entrySet()) {
+            if (entry.getValue().equals("pending")) {
+                entry.setValue("declined");
+                return entry.getKey();
+            }
+        }
+        return -1;
+    }
 }

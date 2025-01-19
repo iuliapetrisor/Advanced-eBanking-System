@@ -2417,8 +2417,6 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "spendingsReport",
   "timestamp" : 847,
   "output" : {

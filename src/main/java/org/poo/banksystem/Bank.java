@@ -23,6 +23,7 @@ import org.poo.commands.AddInterest;
 import org.poo.commands.ChangeInterestRate;
 import org.poo.commands.WithdrawSavings;
 import org.poo.commands.AcceptSplitPayment;
+import org.poo.commands.RejectSplitPayment;
 import org.poo.commands.UpgradePlan;
 import org.poo.commands.CashWithdrawal;
 import org.poo.fileio.CommerciantInput;
@@ -62,6 +63,7 @@ public class Bank {
     private UpgradePlan upgradePlan;
     private CashWithdrawal cashWithdrawal;
     private AcceptSplitPayment acceptSplitPayment;
+    private RejectSplitPayment rejectSplitPayment;
 
     /**
      * Constructor for the Bank class.
@@ -109,6 +111,7 @@ public class Bank {
         upgradePlan = new UpgradePlan(users, exchangeRateManager, transactionManager);
         cashWithdrawal = new CashWithdrawal(users, exchangeRateManager, transactionManager);
         acceptSplitPayment = new AcceptSplitPayment(users, exchangeRateManager, transactionManager);
+        rejectSplitPayment = new RejectSplitPayment(users, transactionManager);
     }
 
     /**
@@ -190,6 +193,9 @@ public class Bank {
                     break;
                 case "acceptSplitPayment":
                     acceptSplitPayment.execute(command, objectMapper, output);
+                    break;
+                case "rejectSplitPayment":
+                    rejectSplitPayment.execute(command, objectMapper, output);
                     break;
                 default:
                     ObjectNode outputNode = objectMapper.createObjectNode();

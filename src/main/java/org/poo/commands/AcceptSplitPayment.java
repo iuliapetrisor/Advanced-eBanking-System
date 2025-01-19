@@ -2,6 +2,7 @@ package org.poo.commands;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.banksystem.Account;
 import org.poo.banksystem.ExchangeRateManager;
 import org.poo.banksystem.User;
@@ -178,12 +179,26 @@ public class AcceptSplitPayment implements Command {
                         transactionManager.addTransactionToAccount(associatedUser.getEmail(),
                                 account.getIBAN(), transaction);
                     }
+                    return;
                 }
 
             }
         }
+
+        ObjectNode commandNode = objectMapper.createObjectNode();
+        commandNode.put("command", "acceptSplitPayment");
+        commandNode.put("timestamp", command.getTimestamp());
+        commandNode.putObject("output").put("description",
+                        "User not found")
+                .put("timestamp", command.getTimestamp());
+        output.add(commandNode);
     }
 
+    /**
+     * This method is used to find a user by account.
+     * @param account the account
+     * @return the user
+     */
     private User findUserByAccount(final Account account) {
         for (User user : users) {
             for (Account userAccount : user.getAccounts()) {

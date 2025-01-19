@@ -1,14 +1,5 @@
 Starting audit...
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:62: Line is longer than 100 characters (found 113). [LineLength]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:84:33: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:84:33: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:96:91: '300' is a magic number. [MagicNumber]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:98:73: '5' is a magic number. [MagicNumber]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:106: Line is longer than 100 characters (found 117). [LineLength]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:106:25: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:106:25: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SendMoney.java:138: Line is longer than 100 characters (found 112). [LineLength]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/banksystem/User.java:140:56: 'planType' hides a field. [HiddenField]
-[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/banksystem/Account.java:258: Line is longer than 100 characters (found 117). [LineLength]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/SplitPayment.java:20:50: Variable 'splitPayments' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/petrisor-alexia/POO_proiect2/./src/main/java/org/poo/commands/PayOnline.java:49:5: Method execute length is 152 lines (max allowed is 150). [MethodLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 2 errors.

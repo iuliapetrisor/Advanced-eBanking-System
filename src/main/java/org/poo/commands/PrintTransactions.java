@@ -7,6 +7,7 @@ import org.poo.banksystem.User;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.Transaction;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class PrintTransactions implements Command {
@@ -36,9 +37,10 @@ public class PrintTransactions implements Command {
         ArrayNode transactionsArray = commandNode.putArray("output");
         for (User user : users) {
             if (user.getEmail().equals(command.getEmail())) {
-                for (Transaction transaction : user.getTransactions()) {
-                    transactionsArray.add(transaction.toJson(objectMapper));
-                }
+                user.getTransactions().stream()
+                        .sorted(Comparator.comparingInt(Transaction::getTimestamp))
+                        .forEach(transaction -> transactionsArray
+                                .add(transaction.toJson(objectMapper)));
                 break;
             }
         }

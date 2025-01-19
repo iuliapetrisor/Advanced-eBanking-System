@@ -7,28 +7,26 @@ import org.poo.banksystem.Account;
 import org.poo.banksystem.User;
 import org.poo.banksystem.ExchangeRateManager;
 import org.poo.fileio.CommandInput;
-import org.poo.transactions.Transaction;
-import org.poo.transactions.TransactionManager;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class SplitPayment implements Command {
     private final List<User> users;
     private final ExchangeRateManager exchangeRateManager;
-    private final TransactionManager transactionManager;
+    private SplitPaymentData splitPaymentData;
+    public static Map<Integer, SplitPaymentData> splitPayments = new HashMap<>();
 
     /**
      * Constructor for SplitPayment.
      * @param users the users
      * @param exchangeRateManager the exchange rate manager
      */
-    public SplitPayment(final List<User> users, final ExchangeRateManager exchangeRateManager,
-                        final TransactionManager transactionManager) {
+    public SplitPayment(final List<User> users, final ExchangeRateManager exchangeRateManager) {
         this.users = users;
         this.exchangeRateManager = exchangeRateManager;
-        this.transactionManager = transactionManager;
     }
 
     /**
@@ -41,68 +39,64 @@ public class SplitPayment implements Command {
     public void execute(final CommandInput command, final ObjectMapper objectMapper,
                         final ArrayNode output) {
         List<String> accountsForSplit = command.getAccounts();
-        double totalAmount = command.getAmount();
+        String type = command.getSplitPaymentType();
         String currency = command.getCurrency();
         int timestamp = command.getTimestamp();
+        List<Account> accounts = new ArrayList<>();
+        List<User> usersInvolved = new ArrayList<>();
 
-        double splitAmount = totalAmount / accountsForSplit.size();
-
-        boolean enoughBalance = true;
-
-        Account accountWithInsufficientFunds = null;
-        for (String accountIBAN : accountsForSplit) {
-            Account account = findAccountByIBAN(accountIBAN);
-            if (account == null) {
-                ObjectNode errorNode = objectMapper.createObjectNode();
-                errorNode.put("command", "splitPayment");
-                errorNode.put("timestamp", timestamp);
-                errorNode.put("error", "Account not found");
-                output.add(errorNode);
-                return;
-            }
-            double splitAmountInAccountCurrency = exchangeRateManager
-                    .convert(splitAmount, currency, account.getCurrency());
-            if (account.getBalance() < splitAmountInAccountCurrency) {
-                enoughBalance = false;
-                accountWithInsufficientFunds = account;
-            }
-        }
-
-        for (String accountIBAN : accountsForSplit) {
-            Account account = findAccountByIBAN(accountIBAN);
-            User user = findUserByAccount(account);
-            if (enoughBalance) {
-                double splitAmountInAccountCurrency = exchangeRateManager.convert(splitAmount,
-                        currency, account.getCurrency());
-                BigDecimal amountBD = BigDecimal.valueOf(splitAmountInAccountCurrency)
-                        .setScale(ExchangeRateManager.SCALE_PRECISION, RoundingMode.HALF_UP);
-                account.pay(amountBD.doubleValue());
-                Transaction transaction = new Transaction.Builder()
-                        .timestamp(timestamp)
-                        .description(String.format("Split payment of %.2f %s", totalAmount,
-                                currency))
-                        .currency(currency)
-                        .amount(String.valueOf(splitAmount))
-                        .involvedAccounts(accountsForSplit)
-                        .build();
-                transactionManager.addTransactionToUser(user.getEmail(), transaction);
-                transactionManager.addTransactionToAccount(user.getEmail(),
-                        account.getIBAN(), transaction);
-                } else {
-                    Transaction transaction = new Transaction.Builder()
-                            .timestamp(timestamp)
-                            .description(String.format("Split payment of %.2f %s", totalAmount,
-                                    currency))
-                            .currency(currency)
-                            .amount(String.valueOf(splitAmount))
-                            .error("Account " + accountWithInsufficientFunds.getIBAN()
-                                    + " has insufficient funds for a split payment.")
-                            .involvedAccounts(accountsForSplit)
-                            .build();
-                    transactionManager.addTransactionToUser(user.getEmail(), transaction);
-                    transactionManager.addTransactionToAccount(user.getEmail(),
-                            account.getIBAN(), transaction);
+        if (type.equals("equal")) {
+            double amountForSplit = command.getAmount() / accountsForSplit.size();
+            for (String iban : accountsForSplit) {
+                Account account = findAccountByIBAN(iban);
+                User user = findUserByAccount(account);
+                if (account == null || user == null) {
+                    ObjectNode errorNode = objectMapper.createObjectNode();
+                    errorNode.put("command", "splitPayment");
+                    errorNode.put("timestamp", timestamp);
+                    errorNode.put("error", "User not found");
+                    output.add(errorNode);
+                    return;
                 }
+                accounts.add(account);
+                usersInvolved.add(user);
+                double amountInAccountCurrency = exchangeRateManager
+                        .convert(amountForSplit, currency, account.getCurrency());
+                user.getSplitPaymentResponses().put(timestamp, "pending");
+                account.getSplitPaymentAmounts().put(timestamp, amountInAccountCurrency);
+            }
+            splitPaymentData = new SplitPaymentData(command.getAmount(),
+                    currency, usersInvolved, accounts,
+                    accountsForSplit, "equal", null);
+            splitPayments.put(timestamp, splitPaymentData);
+            return;
+        }
+        if (type.equals("custom")) {
+            List<Double> amountForUsers = command.getAmountForUsers();
+            for (String iban : accountsForSplit) {
+                Account account = findAccountByIBAN(iban);
+                User user = findUserByAccount(account);
+                if (account == null || user == null) {
+                    ObjectNode errorNode = objectMapper.createObjectNode();
+                    errorNode.put("command", "splitPayment");
+                    errorNode.put("timestamp", timestamp);
+                    errorNode.put("error", "Account not found");
+                    output.add(errorNode);
+                    return;
+                }
+                accounts.add(account);
+                usersInvolved.add(user);
+                double amount = amountForUsers.get(accountsForSplit.indexOf(iban));
+                double amountInAccountCurrency = exchangeRateManager
+                        .convert(amount, currency, account.getCurrency());
+                user.getSplitPaymentResponses().put(timestamp, "pending");
+                account.getSplitPaymentAmounts().put(timestamp, amountInAccountCurrency);
+
+            }
+            splitPaymentData = new SplitPaymentData(command.getAmount(), currency,
+                    usersInvolved, accounts,
+                    accountsForSplit, "custom", amountForUsers);
+            splitPayments.put(timestamp, splitPaymentData);
         }
     }
 

@@ -29,6 +29,8 @@ public final class Transaction {
     private final String currency;
     private final List<String> involvedAccounts;
     private final String newPlanType;
+    private final String splitPaymentType;
+    private final List<Double> amountForUsers;
     private final String error;
 
     /**
@@ -52,6 +54,8 @@ public final class Transaction {
         this.cardHolder = builder.cardHolder;
         this.currency = builder.currency;
         this.involvedAccounts = builder.involvedAccounts;
+        this.splitPaymentType = builder.splitPaymentType;
+        this.amountForUsers = builder.amountForUsers;
         this.error = builder.error;
     }
 
@@ -79,6 +83,8 @@ public final class Transaction {
         private String newPlanType;
         private List<String> involvedAccounts = null;
         private String error = null;
+        private String splitPaymentType;
+        private List<Double> amountForUsers;
 
         /**
          * Sets the timestamp for the transaction.
@@ -143,6 +149,28 @@ public final class Transaction {
          */
         public Builder transferType(final String inputTransferType) {
             this.transferType = inputTransferType;
+            return this;
+        }
+
+        /**
+         * Sets the split payment type for the transaction.
+         *
+         * @param inputSplitPaymentType the split payment type of the transaction
+         * @return the builder instance
+         */
+        public Builder splitPaymentType(final String inputSplitPaymentType) {
+            this.splitPaymentType = inputSplitPaymentType;
+            return this;
+        }
+
+        /**
+         * Sets the amount for users for the transaction.
+         *
+         * @param inputAmountForUsers the amount for users of the transaction
+         * @return the builder instance
+         */
+        public Builder amountForUsers(final List<Double> inputAmountForUsers) {
+            this.amountForUsers = inputAmountForUsers;
             return this;
         }
 
@@ -392,6 +420,15 @@ public final class Transaction {
             transactionNode.putArray("involvedAccounts");
             for (String accountIter : involvedAccounts) {
                 transactionNode.withArray("involvedAccounts").add(accountIter);
+            }
+        }
+        if (splitPaymentType != null) {
+            transactionNode.put("splitPaymentType", splitPaymentType);
+        }
+        if (amountForUsers != null) {
+            transactionNode.putArray("amountForUsers");
+            for (Double amountIter : amountForUsers) {
+                transactionNode.withArray("amountForUsers").add(amountIter);
             }
         }
         if (newPlanType != null) {

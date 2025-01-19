@@ -19,6 +19,9 @@ public class PayOnline implements Command {
     private List<Commerciant> commerciants;
     private final ExchangeRateManager exchangeRateManager;
     private final TransactionManager transactionManager;
+    public static final double SILVER_AMOUNT_THRESHOLD = 300;
+    public static final double SILVER_TRANSACTION_THRESHOLD = 5;
+
 
     /**
      * Constructor for PayOnline.
@@ -59,7 +62,8 @@ public class PayOnline implements Command {
                             double amountInAccountCurrency = exchangeRateManager.convert(
                                     command.getAmount(), command.getCurrency(),
                                     account.getCurrency());
-                            double totalAmount = amountInAccountCurrency + account.getTransactionFee(amountInRon,
+                            double totalAmount = amountInAccountCurrency
+                                    + account.getTransactionFee(amountInRon,
                                     amountInAccountCurrency);
                             if (account.getBalance() >=  totalAmount && card.isActive()
                                     && account.getBalance() - totalAmount
@@ -81,7 +85,7 @@ public class PayOnline implements Command {
                                 if (commerciant == null) {
                                     return;
                                 }
-                                if(account.hasDiscount(commerciant.getType())) {
+                                if (account.hasDiscount(commerciant.getType())) {
                                     double discount = account.getDiscount(commerciant.getType())
                                             * amountInAccountCurrency;
                                     account.addFunds(discount);
@@ -93,9 +97,11 @@ public class PayOnline implements Command {
                                 if (cashback > 0) {
                                     account.addFunds(cashback);
                                 }
-                                if (user.getPlanType().equals("silver") && amountInRon >= 300) {
+                                if (user.getPlanType().equals("silver")
+                                        && amountInRon >= SILVER_AMOUNT_THRESHOLD) {
                                     user.incrementSilverTransactions();
-                                    if (user.getSilverTransactions() == 5) {
+                                    if (user.getSilverTransactions()
+                                            == SILVER_TRANSACTION_THRESHOLD) {
                                         user.setPlanTypeForAllAccounts("gold");
                                         Transaction transactionUpgrade = new Transaction.Builder()
                                                 .timestamp(command.getTimestamp())
@@ -103,7 +109,8 @@ public class PayOnline implements Command {
                                                 .accountIBAN(account.getIBAN())
                                                 .newPlanType("gold")
                                                 .build();
-                                        transactionManager.addTransactionToUser(user.getEmail(), transactionUpgrade);
+                                        transactionManager.addTransactionToUser(user.getEmail(),
+                                                transactionUpgrade);
                                         transactionManager.addTransactionToAccount(user.getEmail(),
                                                 account.getIBAN(), transaction);
                                     }

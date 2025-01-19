@@ -1584,56 +1584,12 @@
     "description" : "Insufficient funds"
   } ]
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
   "command" : "deleteAccount",
   "timestamp" : 764,
   "output" : {
     "success" : "Account deleted",
     "timestamp" : 764
   }
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "printUsers",
   "timestamp" : 777,
@@ -2456,14 +2412,6 @@
     "description" : "Card not found",
     "timestamp" : 837
   }
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "error" : "Invalid command"
 }, {

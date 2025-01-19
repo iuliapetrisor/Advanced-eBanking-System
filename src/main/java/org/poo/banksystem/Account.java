@@ -6,6 +6,8 @@ import org.poo.banksystem.strategies.CashbackStrategy;
 import org.poo.banksystem.strategies.NrOfTransactionsStrategy;
 import org.poo.banksystem.strategies.SpendingThresholdStrategy;
 import org.poo.transactions.Transaction;
+
+import java.util.LinkedHashMap;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,7 +28,7 @@ public class Account {
     private double totalSpendingsForCashback = 0.0;
     private Map<String, Integer> nrTransactionsPerCommerciant = new HashMap<>();
     private Map<String, Double> discounts = new HashMap<>();
-
+    private Map<Integer, Double> splitPaymentAmounts = new LinkedHashMap<>();
     /**
      * Constructor for the Account class.
      *
@@ -219,6 +221,15 @@ public class Account {
     }
 
     /**
+     * Getter for the split payment amounts.
+     *
+     * @return the split payment amounts
+     */
+    public Map<Integer, Double> getSplitPaymentAmounts() {
+        return splitPaymentAmounts;
+    }
+
+    /**
      * Getter for the transaction fee.
      *
      * @param amount the amount of the transaction
@@ -255,7 +266,8 @@ public class Account {
         CashbackStrategy cashbackStrategy;
         if (strategy.equals("nrOfTransactions")) {
             nrTransactionsPerCommerciant.putIfAbsent(commerciantName, 0);
-            nrTransactionsPerCommerciant.put(commerciantName, nrTransactionsPerCommerciant.get(commerciantName) + 1);
+            nrTransactionsPerCommerciant.put(commerciantName,
+                    nrTransactionsPerCommerciant.get(commerciantName) + 1);
             cashbackStrategy = new NrOfTransactionsStrategy(commerciantName);
             return cashbackStrategy.calculateCashback(this);
         } else if (strategy.equals("spendingThreshold")) {

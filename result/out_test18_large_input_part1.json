@@ -433,26 +433,12 @@
 }, {
   "error" : "Invalid command"
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 403,
   "output" : {
     "description" : "Card not found",
     "timestamp" : 403
   }
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 421,
@@ -461,8 +447,6 @@
     "timestamp" : 421
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 424,
   "output" : {
@@ -470,16 +454,12 @@
     "timestamp" : 424
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 427,
   "output" : {
     "description" : "Card not found",
     "timestamp" : 427
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "printUsers",
   "timestamp" : 430,
@@ -2783,13 +2763,6 @@
     "card" : "6592968050400705",
     "cardHolder" : "Ruth_Turnbull@yandex.nz"
   }, {
-    "timestamp" : 399,
-    "description" : "Split payment of 6079.00 EUR",
-    "amount" : 303.95,
-    "currency" : "EUR",
-    "involvedAccounts" : [ "RO65POOB8944016386845896", "RO68POOB1848616931405475", "RO69POOB9846198978826791", "RO38POOB0964823730995794", "RO30POOB9523423715747796", "RO69POOB6209498372540635", "RO33POOB4049920806186500", "RO79POOB3616857825600958", "RO58POOB7344468893732422", "RO00POOB5687892910835215", "RO90POOB5450777208072365", "RO98POOB8412955460158769", "RO58POOB2721178218599590", "RO76POOB4035116042454483", "RO96POOB6738272785416988", "RO10POOB4354933866366881", "RO19POOB4981055641668812", "RO33POOB9999273999620457", "RO37POOB7013767509830666", "RO32POOB0130532963818359" ],
-    "error" : "Account RO10POOB4354933866366881 has insufficient funds for a split payment."
-  }, {
     "timestamp" : 479,
     "description" : "New account created"
   }, {
@@ -3179,12 +3152,6 @@
     "description" : "Card not found",
     "timestamp" : 527
   }
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "printUsers",
   "timestamp" : 531,
@@ -3670,26 +3637,6 @@
     "description" : "Card not found",
     "timestamp" : 581
   }
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "error" : "Invalid command"
 }, {
@@ -4545,16 +4492,6 @@
       } ]
     } ]
   } ]
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "error" : "Invalid command"
 }, {

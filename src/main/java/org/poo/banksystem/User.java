@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.LinkedHashMap;
 
 public class User {
     private final String firstName;
@@ -23,7 +24,7 @@ public class User {
     private List<Transaction> transactions;
     private int silverTransactions = 0;
     private Map<String, String> aliases = new HashMap<>();
-
+    private Map<Integer, String> splitPaymentResponses = new LinkedHashMap<>();
     /**
      * Constructor for the User class.
      *
@@ -124,24 +125,15 @@ public class User {
     }
 
     /**
-     * Setter for the plan type.
-     *
-     * @param planType the plan type
-     */
-    public void setPlanType(final String planType) {
-        this.planType = planType;
-    }
-
-    /**
      * Setter for the plan type for all accounts.
      *
-     * @param planType the plan type
+     * @param inputPlanType the plan type
      */
-    public void setPlanTypeForAllAccounts(final String planType) {
+    public void setPlanTypeForAllAccounts(final String inputPlanType) {
         for (Account account : accounts) {
-            account.setPlanType(planType);
+            account.setPlanType(inputPlanType);
         }
-        this.planType = planType;
+        this.planType = inputPlanType;
     }
 
     /**
@@ -169,6 +161,15 @@ public class User {
      */
     public List<Transaction> getTransactions() {
         return transactions;
+    }
+
+    /**
+     * Getter for the split payment responses.
+     *
+     * @return the split payment responses
+     */
+    public Map<Integer, String> getSplitPaymentResponses() {
+        return splitPaymentResponses;
     }
 
     /**
@@ -251,5 +252,18 @@ public class User {
      */
     public void incrementSilverTransactions() {
         silverTransactions++;
+    }
+
+    /**
+     * Accepts the first pending split payment.
+     */
+    public int acceptFirstPendingSplitPayment() {
+        for (Map.Entry<Integer, String> entry : splitPaymentResponses.entrySet()) {
+            if (entry.getValue().equals("pending")) {
+                entry.setValue("accepted");
+                return entry.getKey();
+            }
+        }
+        return -1;
     }
 }

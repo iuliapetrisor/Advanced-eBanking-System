@@ -103,7 +103,7 @@ public class SendMoney implements Command {
                         transactionManager.addTransactionToUser(sender.getEmail(), transaction);
                         transactionManager.addTransactionToAccount(sender.getEmail(),
                                 senderAccount.getIBAN(), transaction);
-                        if(senderAccount.hasDiscount(commerciant.getType())) {
+                        if (senderAccount.hasDiscount(commerciant.getType())) {
                             double discount = senderAccount.getDiscount(commerciant.getType())
                                     * command.getAmount();
                             senderAccount.addFunds(discount);
@@ -133,9 +133,8 @@ public class SendMoney implements Command {
                 command.getAmount(), senderAccount.getCurrency(), "RON");
         double amountInReceiverCurrency = exchangeRateManager.convert(
                 command.getAmount(), senderAccount.getCurrency(), receiverAccount.getCurrency());
-//        BigDecimal amountBD = BigDecimal.valueOf(amountInReceiverCurrency)
-//                .setScale(ExchangeRateManager.SCALE_PRECISION, RoundingMode.HALF_UP);
-        double amount = command.getAmount() + senderAccount.getTransactionFee(amountInRon, command.getAmount());
+        double amount = command.getAmount() + senderAccount.getTransactionFee(amountInRon,
+                command.getAmount());
         if (senderAccount.getBalance() >= amount) {
             senderAccount.pay(amount);
             receiverAccount.addFunds(amountInReceiverCurrency);

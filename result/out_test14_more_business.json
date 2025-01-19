@@ -194,14 +194,4 @@
     "description" : "User not found",
     "timestamp" : 400
   }
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 } ]

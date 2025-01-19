@@ -22,6 +22,7 @@ import org.poo.commands.SpendingsReport;
 import org.poo.commands.AddInterest;
 import org.poo.commands.ChangeInterestRate;
 import org.poo.commands.WithdrawSavings;
+import org.poo.commands.AcceptSplitPayment;
 import org.poo.commands.UpgradePlan;
 import org.poo.commands.CashWithdrawal;
 import org.poo.fileio.CommerciantInput;
@@ -60,6 +61,7 @@ public class Bank {
     private WithdrawSavings withdrawSavings;
     private UpgradePlan upgradePlan;
     private CashWithdrawal cashWithdrawal;
+    private AcceptSplitPayment acceptSplitPayment;
 
     /**
      * Constructor for the Bank class.
@@ -98,7 +100,7 @@ public class Bank {
         setMinBalance = new SetMinBalance(users);
         checkCardStatus = new CheckCardStatus(users, transactionManager);
         setAlias = new SetAlias(users);
-        splitPayment = new SplitPayment(users, exchangeRateManager, transactionManager);
+        splitPayment = new SplitPayment(users, exchangeRateManager);
         report = new Report(users);
         spendingsReport = new SpendingsReport(users);
         addInterest = new AddInterest(users, transactionManager);
@@ -106,6 +108,7 @@ public class Bank {
         withdrawSavings = new WithdrawSavings(users, exchangeRateManager, transactionManager);
         upgradePlan = new UpgradePlan(users, exchangeRateManager, transactionManager);
         cashWithdrawal = new CashWithdrawal(users, exchangeRateManager, transactionManager);
+        acceptSplitPayment = new AcceptSplitPayment(users, exchangeRateManager, transactionManager);
     }
 
     /**
@@ -184,6 +187,9 @@ public class Bank {
                     break;
                 case "cashWithdrawal":
                     cashWithdrawal.execute(command, objectMapper, output);
+                    break;
+                case "acceptSplitPayment":
+                    acceptSplitPayment.execute(command, objectMapper, output);
                     break;
                 default:
                     ObjectNode outputNode = objectMapper.createObjectNode();

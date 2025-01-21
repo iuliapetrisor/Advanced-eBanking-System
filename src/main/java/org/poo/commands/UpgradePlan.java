@@ -55,7 +55,6 @@ public class UpgradePlan implements Command {
                         Transaction transaction = new Transaction.Builder()
                                 .timestamp(timestamp)
                                 .description("The user already has the " + newPlanType + " plan.")
-                                .accountIBAN(accountIBAN)
                                 .build();
                         transactionManager.addTransactionToUser(user.getEmail(), transaction);
                         transactionManager.addTransactionToAccount(user.getEmail(), accountIBAN,

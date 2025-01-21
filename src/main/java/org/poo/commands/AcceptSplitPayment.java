@@ -108,7 +108,7 @@ public class AcceptSplitPayment implements Command {
                                 account.getCurrency(), "RON");
                         double totalAmount = amount + account.getTransactionFee(amountInRon,
                                 amount);
-                        account.pay(totalAmount);
+                        account.pay(amount);
                         Transaction transaction = new Transaction.Builder()
                                 .timestamp(timestamp)
                                 .description(String.format("Split payment of %.2f %s",
@@ -163,7 +163,7 @@ public class AcceptSplitPayment implements Command {
                                 account.getCurrency(), "RON");
                         double totalAmount = amount + account.getTransactionFee(amountInRon,
                                 amount);
-                        account.pay(totalAmount);
+                        account.pay(amount);
                         Transaction transaction = new Transaction.Builder()
                                 .timestamp(timestamp)
                                 .description(String.format("Split payment of %.2f %s",

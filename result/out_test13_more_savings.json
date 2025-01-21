@@ -418,8 +418,7 @@
       "newPlanType" : "silver"
     }, {
       "timestamp" : 214,
-      "description" : "The user already has the silver plan.",
-      "accountIBAN" : "RO65POOB8944016386845896"
+      "description" : "The user already has the silver plan."
     }, {
       "timestamp" : 223,
       "description" : "Interest rate of the account changed to 0.17"
@@ -444,7 +443,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 195,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422"
+  }, {
+    "timestamp" : 195,
+    "description" : "Savings withdrawal",
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422"
   }, {
     "timestamp" : 208,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -476,7 +484,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 197,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365"
+  }, {
+    "timestamp" : 197,
+    "description" : "Savings withdrawal",
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365"
   }, {
     "timestamp" : 201,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -500,8 +517,7 @@
     "newPlanType" : "silver"
   }, {
     "timestamp" : 214,
-    "description" : "The user already has the silver plan.",
-    "accountIBAN" : "RO65POOB8944016386845896"
+    "description" : "The user already has the silver plan."
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -525,7 +541,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 199,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590"
+  }, {
+    "timestamp" : 199,
+    "description" : "Savings withdrawal",
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590"
   }, {
     "timestamp" : 209,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -544,7 +569,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 195,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422"
+  }, {
+    "timestamp" : 195,
+    "description" : "Savings withdrawal",
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422"
   }, {
     "timestamp" : 208,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -590,7 +624,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 197,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365"
+  }, {
+    "timestamp" : 197,
+    "description" : "Savings withdrawal",
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365"
   }, {
     "timestamp" : 201,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -614,8 +657,7 @@
     "newPlanType" : "silver"
   }, {
     "timestamp" : 214,
-    "description" : "The user already has the silver plan.",
-    "accountIBAN" : "RO65POOB8944016386845896"
+    "description" : "The user already has the silver plan."
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -646,7 +688,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 199,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590"
+  }, {
+    "timestamp" : 199,
+    "description" : "Savings withdrawal",
+    "amount" : 375.0,
+    "classicAccountIBAN" : "RO98POOB8412955460158769",
+    "savingsAccountIBAN" : "RO58POOB2721178218599590"
   }, {
     "timestamp" : 209,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -747,7 +798,7 @@
     "email" : "Christina_Hudson@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 1569.7863333333332,
+      "balance" : 1569.9444444444443,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -764,7 +815,7 @@
     "email" : "Michael_Miles@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 858.7863333333333,
+      "balance" : 858.9444444444445,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -827,8 +878,7 @@
     "newPlanType" : "silver"
   }, {
     "timestamp" : 214,
-    "description" : "The user already has the silver plan.",
-    "accountIBAN" : "RO65POOB8944016386845896"
+    "description" : "The user already has the silver plan."
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -913,7 +963,7 @@
     "email" : "Christina_Hudson@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 1569.7863333333332,
+      "balance" : 1569.9444444444443,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -930,7 +980,7 @@
     "email" : "Michael_Miles@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 858.7863333333333,
+      "balance" : 858.9444444444445,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -987,7 +1037,20 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 381,
+  "output" : {
+    "IBAN" : "RO68POOB1848616931405475",
+    "balance" : 210.0,
+    "currency" : "USD",
+    "spending limit" : 111.11111111111111,
+    "deposit limit" : 111.11111111111111,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
   "command" : "report",
   "timestamp" : 382,
@@ -1077,7 +1140,7 @@
     "email" : "Christina_Hudson@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 1569.7863333333332,
+      "balance" : 1569.9444444444443,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1094,7 +1157,7 @@
     "email" : "Michael_Miles@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 858.7863333333333,
+      "balance" : 858.9444444444445,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1229,7 +1292,7 @@
     "email" : "Christina_Hudson@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 1569.7863333333332,
+      "balance" : 1569.9444444444443,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1246,7 +1309,7 @@
     "email" : "Michael_Miles@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 858.7863333333333,
+      "balance" : 858.9444444444445,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1320,20 +1383,6 @@
       "cards" : [ ]
     } ]
   } ]
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 454,
@@ -1437,7 +1486,7 @@
     "email" : "Christina_Hudson@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 1748.7863333333332,
+      "balance" : 1748.9444444444443,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1454,7 +1503,7 @@
     "email" : "Michael_Miles@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 858.7863333333333,
+      "balance" : 858.9444444444445,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1529,18 +1578,6 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 529,
   "output" : {
@@ -1590,7 +1627,17 @@
     "timestamp" : 535
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 536,
+  "output" : {
+    "IBAN" : "RO68POOB1848616931405475",
+    "balance" : 5599.366,
+    "currency" : "USD",
+    "spending limit" : 189.0,
+    "deposit limit" : 1300.0,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 }, {
   "command" : "printUsers",
   "timestamp" : 537,
@@ -1652,7 +1699,7 @@
     "email" : "Christina_Hudson@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 1748.7863333333332,
+      "balance" : 1748.9444444444443,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1669,7 +1716,7 @@
     "email" : "Michael_Miles@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 858.7863333333333,
+      "balance" : 858.9444444444445,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1769,8 +1816,7 @@
     "newPlanType" : "silver"
   }, {
     "timestamp" : 214,
-    "description" : "The user already has the silver plan.",
-    "accountIBAN" : "RO65POOB8944016386845896"
+    "description" : "The user already has the silver plan."
   }, {
     "timestamp" : 223,
     "description" : "Interest rate of the account changed to 0.17"
@@ -1834,7 +1880,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 195,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422"
+  }, {
+    "timestamp" : 195,
+    "description" : "Savings withdrawal",
+    "amount" : 23.0,
+    "classicAccountIBAN" : "RO69POOB9846198978826791",
+    "savingsAccountIBAN" : "RO58POOB7344468893732422"
   }, {
     "timestamp" : 208,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -1874,7 +1929,16 @@
     "description" : "New account created"
   }, {
     "timestamp" : 197,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365"
+  }, {
+    "timestamp" : 197,
+    "description" : "Savings withdrawal",
+    "amount" : 159.0,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO90POOB5450777208072365"
   }, {
     "timestamp" : 201,
     "description" : "Account couldn't be deleted - there are funds remaining"
@@ -1940,7 +2004,7 @@
     "email" : "Christina_Hudson@outlook.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB7344468893732422",
-      "balance" : 1919.7863333333332,
+      "balance" : 1919.9444444444443,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]
@@ -1957,7 +2021,7 @@
     "email" : "Michael_Miles@hotmail.us",
     "accounts" : [ {
       "IBAN" : "RO58POOB2721178218599590",
-      "balance" : 858.7863333333333,
+      "balance" : 858.9444444444445,
       "currency" : "USD",
       "type" : "savings",
       "cards" : [ ]

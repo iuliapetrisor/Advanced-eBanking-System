@@ -3,6 +3,7 @@ package org.poo.commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.poo.banksystem.BusinessAccount;
 import org.poo.fileio.CommandInput;
 import org.poo.banksystem.Account;
 import org.poo.banksystem.Card;
@@ -44,6 +45,12 @@ public class PrintUsers implements Command {
 
             ArrayNode accountsArray = objectMapper.createArrayNode();
             for (Account account : user.getAccounts()) {
+                if (account.getType().equals("business")) {
+                    BusinessAccount businessAccount = (BusinessAccount) account;
+                    if (!businessAccount.getOwner().equals(user)) {
+                        continue;
+                    }
+                }
                 ObjectNode accountNode = objectMapper.createObjectNode();
                 accountNode.put("IBAN", account.getIBAN());
                 accountNode.put("balance", account.getBalance());

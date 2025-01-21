@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.banksystem.Account;
+import org.poo.banksystem.BusinessAccount;
 import org.poo.banksystem.Commerciant;
 import org.poo.banksystem.User;
 import org.poo.banksystem.ExchangeRateManager;
@@ -73,13 +74,6 @@ public class SendMoney implements Command {
         }
 
         if (senderAccount == null) {
-            ObjectNode commandNode = objectMapper.createObjectNode();
-            commandNode.put("command", "sendMoney");
-            commandNode.put("timestamp", command.getTimestamp());
-            commandNode.putObject("output").put("description",
-                            "User not found")
-                    .put("timestamp", command.getTimestamp());
-            output.add(commandNode);
             return;
         }
 
@@ -90,14 +84,36 @@ public class SendMoney implements Command {
                             command.getAmount(), senderAccount.getCurrency(), "RON");
                     double amount = command.getAmount()
                             + senderAccount.getTransactionFee(amountInRon, command.getAmount());
-                    if (senderAccount.getBalance() >= amount) {
+
+                    if (senderAccount.getBalance() >= amount
+                            && senderAccount.getBalance() - amount
+                            >= senderAccount.getMinBalance()) {
+                        if (senderAccount.getType().equals("business")) {
+                            BusinessAccount businessAccount = (BusinessAccount) senderAccount;
+                            if (businessAccount.getEmployees().contains(sender)) {
+                                if (businessAccount.getSpendingLimit() < amount) {
+                                    return;
+                                }
+                                double spentAmount = businessAccount.getEmployeeSpendings()
+                                        .getOrDefault(sender, 0.0);
+                                businessAccount.getEmployeeSpendings().put(sender,
+                                        spentAmount + amount);
+                            }
+                            if (businessAccount.getManagers().contains(sender)) {
+                                double spentAmount = businessAccount.getManagerSpendings()
+                                        .getOrDefault(sender, 0.0);
+                                businessAccount.getManagerSpendings().put(sender,
+                                        spentAmount + amount);
+                            }
+                        }
                         senderAccount.pay(amount);
                         Transaction transaction = new Transaction.Builder()
                                 .timestamp(command.getTimestamp())
                                 .description(command.getDescription())
                                 .senderIBAN(senderAccount.getIBAN())
                                 .receiverIBAN(receiverIBAN)
-                                .amount(command.getAmount() + " " + senderAccount.getCurrency())
+                                .amount(command.getAmount() + " "
+                                        + senderAccount.getCurrency())
                                 .transferType("sent")
                                 .build();
                         transactionManager.addTransactionToUser(sender.getEmail(), transaction);
@@ -135,7 +151,20 @@ public class SendMoney implements Command {
                 command.getAmount(), senderAccount.getCurrency(), receiverAccount.getCurrency());
         double amount = command.getAmount() + senderAccount.getTransactionFee(amountInRon,
                 command.getAmount());
-        if (senderAccount.getBalance() >= amount) {
+        if (senderAccount.getBalance() >= amount
+                && senderAccount.getBalance() - amount >= senderAccount.getMinBalance()) {
+            if (senderAccount.getType().equals("business")) {
+                BusinessAccount businessAccount = (BusinessAccount) senderAccount;
+                if (businessAccount.getEmployees().contains(sender)) {
+                    if (businessAccount.getSpendingLimit() < command.getAmount()) {
+                        return;
+                    }
+                    businessAccount.getEmployeeSpendings().put(sender, command.getAmount());
+                }
+                if (businessAccount.getManagers().contains(sender)) {
+                    businessAccount.getManagerSpendings().put(sender, command.getAmount());
+                }
+            }
             senderAccount.pay(amount);
             receiverAccount.addFunds(amountInReceiverCurrency);
 

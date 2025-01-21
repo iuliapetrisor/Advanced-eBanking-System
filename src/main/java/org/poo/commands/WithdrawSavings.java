@@ -96,10 +96,17 @@ public class WithdrawSavings implements Command {
                     Transaction transaction = new Transaction.Builder()
                             .timestamp(command.getTimestamp())
                             .description("Savings withdrawal")
+                            .amount(String.valueOf(command.getAmount()))
+                            .classicAccountIBAN(receiverAccount.getIBAN())
+                            .savingsAccountIBAN(account.getIBAN())
                             .build();
                     transactionManager.addTransactionToUser(user.getEmail(), transaction);
                     transactionManager.addTransactionToAccount(user.getEmail(),
                             account.getIBAN(), transaction);
+                    transactionManager.addTransactionToUser(user.getEmail(), transaction);
+                    transactionManager.addTransactionToAccount(user.getEmail(),
+                            receiverAccount.getIBAN(),
+                            transaction);
                     return;
                 }
             }

@@ -1849,54 +1849,6 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 678,
   "output" : {
@@ -1925,7 +1877,64 @@
     "timestamp" : 681
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 682,
+  "output" : {
+    "IBAN" : "RO45POOB6505529013808948",
+    "balance" : 6537.0,
+    "currency" : "USD",
+    "spending limit" : 771.0,
+    "deposit limit" : 306.0,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Wallace Tony",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Robson Anna",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Iyengar Harrison",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Ababe Heracleea",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Calderon Aurelio",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Beuchat Roland",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Magana Zepeda Juana",
+      "spent" : 0.0,
+      "deposited" : 6537.0
+    } ],
+    "employees" : [ {
+      "username" : "Ene Angel",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Dowerg Alwin",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Arsenio Bellucc Dott.",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Ouellet Karine",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 6537.0
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 755,
@@ -2003,26 +2012,6 @@
     "description" : "Card not found",
     "timestamp" : 810
   }
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "printUsers",
   "timestamp" : 877,
@@ -2202,7 +2191,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO97POOB5006417983475785",
-      "balance" : 2454.504276,
+      "balance" : 2456.9579999999996,
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
@@ -2468,7 +2457,7 @@
     "email" : "Juana_Magana_Zepeda@hotmail.mx",
     "accounts" : [ {
       "IBAN" : "RO98POOB7190609943699593",
-      "balance" : 1417.4697142857142,
+      "balance" : 1417.7142857142858,
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
@@ -2548,37 +2537,188 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 920,
+  "output" : {
+    "IBAN" : "RO45POOB6505529013808948",
+    "balance" : 15781.239999999998,
+    "currency" : "USD",
+    "spending limit" : 840.0,
+    "deposit limit" : 306.0,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Wallace Tony",
+      "spent" : 0.0,
+      "deposited" : 1209.78
+    }, {
+      "username" : "Robson Anna",
+      "spent" : 0.0,
+      "deposited" : 1181.78
+    }, {
+      "username" : "Iyengar Harrison",
+      "spent" : 0.0,
+      "deposited" : 1208.78
+    }, {
+      "username" : "Ababe Heracleea",
+      "spent" : 0.0,
+      "deposited" : 1087.78
+    }, {
+      "username" : "Calderon Aurelio",
+      "spent" : 0.0,
+      "deposited" : 1087.78
+    }, {
+      "username" : "Beuchat Roland",
+      "spent" : 0.0,
+      "deposited" : 1167.78
+    }, {
+      "username" : "Magana Zepeda Juana",
+      "spent" : 0.0,
+      "deposited" : 7733.78
+    }, {
+      "username" : "Sanders-Kramer Iris",
+      "spent" : 0.0,
+      "deposited" : 1103.78
+    } ],
+    "employees" : [ {
+      "username" : "Ene Angel",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Dowerg Alwin",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Arsenio Bellucc Dott.",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Ouellet Karine",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 15781.24
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 921,
+  "output" : {
+    "IBAN" : "RO01POOB3925326637526572",
+    "balance" : 13194.679999999998,
+    "currency" : "USD",
+    "spending limit" : 16.0,
+    "deposit limit" : 111.11111111111116,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Arsenio Bellucc Dott.",
+      "spent" : 0.0,
+      "deposited" : 1189.78
+    }, {
+      "username" : "Ouellet Karine",
+      "spent" : 0.0,
+      "deposited" : 1226.78
+    }, {
+      "username" : "Iyengar Harrison",
+      "spent" : 0.0,
+      "deposited" : 1244.78
+    }, {
+      "username" : "Ababe Heracleea",
+      "spent" : 0.0,
+      "deposited" : 1195.78
+    }, {
+      "username" : "Magana Zepeda Juana",
+      "spent" : 0.0,
+      "deposited" : 7143.78
+    }, {
+      "username" : "Sanders-Kramer Iris",
+      "spent" : 0.0,
+      "deposited" : 1193.78
+    } ],
+    "employees" : [ {
+      "username" : "Ene Angel",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Dowerg Alwin",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Wallace Tony",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Robson Anna",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Calderon Aurelio",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Beuchat Roland",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 13194.68
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 922,
+  "output" : {
+    "IBAN" : "RO04POOB3492426980939341",
+    "balance" : 1189.4075314285712,
+    "currency" : "EUR",
+    "spending limit" : 958.0,
+    "deposit limit" : 100.00000000000001,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 923,
+  "output" : {
+    "IBAN" : "RO66POOB1088683052483887",
+    "balance" : 1658.0,
+    "currency" : "EUR",
+    "spending limit" : 500.0,
+    "deposit limit" : 100.00000000000001,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 924,
+  "output" : {
+    "IBAN" : "RO19POOB5993192794373940",
+    "balance" : 2292.0,
+    "currency" : "EUR",
+    "spending limit" : 838.0,
+    "deposit limit" : 100.00000000000001,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 925,
+  "output" : {
+    "IBAN" : "RO19POOB5993192794373940",
+    "balance" : 2292.0,
+    "currency" : "EUR",
+    "spending limit" : 838.0,
+    "deposit limit" : 100.00000000000001,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 934,
@@ -2790,7 +2930,84 @@
     "timestamp" : 963
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 964,
+  "output" : {
+    "IBAN" : "RO45POOB6505529013808948",
+    "balance" : 19306.239999999998,
+    "currency" : "USD",
+    "spending limit" : 840.0,
+    "deposit limit" : 306.0,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Wallace Tony",
+      "spent" : 0.0,
+      "deposited" : 3228.7799999999997
+    }, {
+      "username" : "Robson Anna",
+      "spent" : 0.0,
+      "deposited" : 1181.78
+    }, {
+      "username" : "Iyengar Harrison",
+      "spent" : 0.0,
+      "deposited" : 1208.78
+    }, {
+      "username" : "Ababe Heracleea",
+      "spent" : 0.0,
+      "deposited" : 1087.78
+    }, {
+      "username" : "Calderon Aurelio",
+      "spent" : 0.0,
+      "deposited" : 1087.78
+    }, {
+      "username" : "Beuchat Roland",
+      "spent" : 0.0,
+      "deposited" : 1167.78
+    }, {
+      "username" : "Magana Zepeda Juana",
+      "spent" : 0.0,
+      "deposited" : 7733.78
+    }, {
+      "username" : "Sanders-Kramer Iris",
+      "spent" : 0.0,
+      "deposited" : 2609.7799999999997
+    } ],
+    "employees" : [ {
+      "username" : "Ene Angel",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Dowerg Alwin",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Arsenio Bellucc Dott.",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Ouellet Karine",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Hovel Erdogan",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Diaconescu Angel",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Raju Owen",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Peterson Marvin",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 19306.239999999998
+  }
 }, {
   "command" : "printUsers",
   "timestamp" : 970,
@@ -2970,7 +3187,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO97POOB5006417983475785",
-      "balance" : 2454.504276,
+      "balance" : 2456.9579999999996,
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
@@ -3236,7 +3453,7 @@
     "email" : "Juana_Magana_Zepeda@hotmail.mx",
     "accounts" : [ {
       "IBAN" : "RO98POOB7190609943699593",
-      "balance" : 1417.4697142857142,
+      "balance" : 1417.7142857142858,
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
@@ -3494,7 +3711,7 @@
       "cards" : [ ]
     }, {
       "IBAN" : "RO97POOB5006417983475785",
-      "balance" : 2454.504276,
+      "balance" : 2456.9579999999996,
       "currency" : "INR",
       "type" : "savings",
       "cards" : [ {
@@ -3760,7 +3977,7 @@
     "email" : "Juana_Magana_Zepeda@hotmail.mx",
     "accounts" : [ {
       "IBAN" : "RO98POOB7190609943699593",
-      "balance" : 1417.4697142857142,
+      "balance" : 1417.7142857142858,
       "currency" : "MXN",
       "type" : "classic",
       "cards" : [ {
@@ -4158,7 +4375,7 @@
   "timestamp" : 1056,
   "output" : {
     "IBAN" : "RO98POOB7190609943699593",
-    "balance" : 1417.4697142857142,
+    "balance" : 1417.7142857142858,
     "currency" : "MXN",
     "transactions" : [ ],
     "commerciants" : [ ]

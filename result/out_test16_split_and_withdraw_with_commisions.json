@@ -894,7 +894,16 @@
     "currency" : "RON"
   }, {
     "timestamp" : 229,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 1225.02,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO19POOB4981055641668812"
+  }, {
+    "timestamp" : 229,
+    "description" : "Savings withdrawal",
+    "amount" : 1225.02,
+    "classicAccountIBAN" : "RO37POOB7013767509830666",
+    "savingsAccountIBAN" : "RO19POOB4981055641668812"
   } ]
 }, {
   "command" : "printTransactions",
@@ -939,7 +948,16 @@
     "currency" : "RON"
   }, {
     "timestamp" : 233,
-    "description" : "Savings withdrawal"
+    "description" : "Savings withdrawal",
+    "amount" : 1748.88,
+    "classicAccountIBAN" : "RO79POOB3616857825600958",
+    "savingsAccountIBAN" : "RO00POOB5687892910835215"
+  }, {
+    "timestamp" : 233,
+    "description" : "Savings withdrawal",
+    "amount" : 1748.88,
+    "classicAccountIBAN" : "RO79POOB3616857825600958",
+    "savingsAccountIBAN" : "RO00POOB5687892910835215"
   } ]
 }, {
   "command" : "printTransactions",

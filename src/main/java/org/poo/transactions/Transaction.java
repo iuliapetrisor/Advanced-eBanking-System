@@ -2,7 +2,6 @@ package org.poo.transactions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-
 import java.util.List;
 
 /**
@@ -31,6 +30,8 @@ public final class Transaction {
     private final String newPlanType;
     private final String splitPaymentType;
     private final List<Double> amountForUsers;
+    private final String classicAccountIBAN;
+    private final String savingsAccountIBAN;
     private final String error;
 
     /**
@@ -57,6 +58,8 @@ public final class Transaction {
         this.splitPaymentType = builder.splitPaymentType;
         this.amountForUsers = builder.amountForUsers;
         this.error = builder.error;
+        this.classicAccountIBAN = builder.classicAccountIBAN;
+        this.savingsAccountIBAN = builder.savingsAccountIBAN;
     }
 
     /**
@@ -85,6 +88,8 @@ public final class Transaction {
         private String error = null;
         private String splitPaymentType;
         private List<Double> amountForUsers;
+        private String classicAccountIBAN;
+        private String savingsAccountIBAN;
 
         /**
          * Sets the timestamp for the transaction.
@@ -130,6 +135,27 @@ public final class Transaction {
             return this;
         }
 
+        /**
+         * Sets the classic account IBAN for the transaction.
+         *
+         * @param inputClassicAccountIBAN the classic account IBAN of the transaction
+         * @return the builder instance
+         */
+        public Builder classicAccountIBAN(final String inputClassicAccountIBAN) {
+            this.classicAccountIBAN = inputClassicAccountIBAN;
+            return this;
+        }
+
+        /**
+         * Sets the savings account IBAN for the transaction.
+         *
+         * @param inputSavingsAccountIBAN the savings account IBAN of the transaction
+         * @return the builder instance
+         */
+        public Builder savingsAccountIBAN(final String inputSavingsAccountIBAN) {
+            this.savingsAccountIBAN = inputSavingsAccountIBAN;
+            return this;
+        }
         /**
          * Sets the amount for the transaction.
          *
@@ -388,7 +414,7 @@ public final class Transaction {
         }
         if (amount != null) {
             if (description.equals("Card payment") || description.contains("Split payment")
-                    || description.contains("Cash withdrawal")
+                    || description.contains("withdrawal")
                     || description.equals("Interest rate income")) {
                 transactionNode.put("amount", Double.parseDouble(amount));
             } else {
@@ -406,6 +432,12 @@ public final class Transaction {
         }
         if (accountIBAN != null) {
             transactionNode.put("accountIBAN", accountIBAN);
+        }
+        if (classicAccountIBAN != null) {
+            transactionNode.put("classicAccountIBAN", classicAccountIBAN);
+        }
+        if (savingsAccountIBAN != null) {
+            transactionNode.put("savingsAccountIBAN", savingsAccountIBAN);
         }
         if (card != null) {
             transactionNode.put("card", card);

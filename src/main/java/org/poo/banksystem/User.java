@@ -25,6 +25,7 @@ public class User {
     private int silverTransactions = 0;
     private Map<String, String> aliases = new HashMap<>();
     private Map<Integer, String> splitPaymentResponses = new LinkedHashMap<>();
+    private Map<BusinessAccount, String> businessAssociations = new HashMap<>();
     /**
      * Constructor for the User class.
      *
@@ -278,5 +279,14 @@ public class User {
             }
         }
         return -1;
+    }
+
+    /**
+     * Getter for the business associations.
+     *
+     * @return the business associations
+     */
+    public Map<BusinessAccount, String> getBusinessAssociations() {
+        return businessAssociations;
     }
 }

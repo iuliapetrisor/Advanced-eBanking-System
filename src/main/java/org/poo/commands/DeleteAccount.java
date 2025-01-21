@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.poo.banksystem.Account;
+import org.poo.banksystem.BusinessAccount;
 import org.poo.banksystem.User;
 import org.poo.fileio.CommandInput;
 import org.poo.transactions.Transaction;
@@ -38,6 +39,20 @@ public class DeleteAccount implements Command {
             if (user.getEmail().equals(command.getEmail())) {
                 for (Account account : user.getAccounts()) {
                     if (account.getIBAN().equals(command.getAccount())) {
+                        if (account.getType().equals("business")) {
+                            BusinessAccount businessAccount = (BusinessAccount) account;
+                            if (!businessAccount.getOwner().equals(user)) {
+                                ObjectNode commandNode = objectMapper.createObjectNode();
+                                commandNode.put("command", "deleteAccount");
+                                commandNode.put("timestamp", command.getTimestamp());
+                                commandNode.putObject("output")
+                                        .put("error",
+                                                "You must be owner in order to delete account")
+                                        .put("timestamp", command.getTimestamp());
+                                output.add(commandNode);
+                                return;
+                            }
+                        }
                         if (account.getBalance() == 0.0) {
                             user.getAccounts().remove(account);
                             ObjectNode commandNode = objectMapper.createObjectNode();

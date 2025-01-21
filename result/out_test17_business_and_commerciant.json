@@ -1,65 +1,75 @@
 [ {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 262,
+  "output" : {
+    "IBAN" : "RO98POOB8412955460158769",
+    "balance" : 119.0,
+    "currency" : "USD",
+    "spending limit" : 280.0,
+    "deposit limit" : 107.14285714285714,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ {
+      "username" : "Lee Joe",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Albu Dida",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Marin Silvia",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 263,
+  "output" : {
+    "IBAN" : "RO32POOB0130532963818359",
+    "balance" : 39.0,
+    "currency" : "USD",
+    "spending limit" : 896.0,
+    "deposit limit" : 107.14285714285714,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 264,
+  "output" : {
+    "IBAN" : "RO68POOB1848616931405475",
+    "balance" : 749.0,
+    "currency" : "RON",
+    "spending limit" : 473.0,
+    "deposit limit" : 500.0,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 265,
+  "output" : {
+    "IBAN" : "RO10POOB4354933866366881",
+    "balance" : 741.0,
+    "currency" : "RON",
+    "spending limit" : 500.0,
+    "deposit limit" : 500.0,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 297,
@@ -67,8 +77,6 @@
     "description" : "Card not found",
     "timestamp" : 297
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 304,
@@ -83,8 +91,6 @@
     "description" : "Card not found",
     "timestamp" : 307
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 313,
@@ -107,8 +113,6 @@
     "timestamp" : 325
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 330,
   "output" : {
@@ -116,16 +120,12 @@
     "timestamp" : 330
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 334,
   "output" : {
     "description" : "Card not found",
     "timestamp" : 334
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 342,
@@ -141,8 +141,6 @@
     "timestamp" : 349
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 355,
   "output" : {
@@ -157,16 +155,12 @@
     "timestamp" : 359
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 365,
   "output" : {
     "description" : "Card not found",
     "timestamp" : 365
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 369,
@@ -182,8 +176,6 @@
     "timestamp" : 372
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 380,
   "output" : {
@@ -191,16 +183,12 @@
     "timestamp" : 380
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 389,
   "output" : {
     "description" : "Card not found",
     "timestamp" : 389
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 394,
@@ -216,16 +204,12 @@
     "timestamp" : 400
   }
 }, {
-  "error" : "Invalid command"
-}, {
   "command" : "payOnline",
   "timestamp" : 408,
   "output" : {
     "description" : "Card not found",
     "timestamp" : 408
   }
-}, {
-  "error" : "Invalid command"
 }, {
   "command" : "payOnline",
   "timestamp" : 415,
@@ -255,19 +239,203 @@
     "timestamp" : 425
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 429,
+  "output" : {
+    "IBAN" : "RO98POOB8412955460158769",
+    "balance" : 1254.0,
+    "currency" : "USD",
+    "spending limit" : 868.0,
+    "deposit limit" : 107.14285714285714,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Mocanu Mirela",
+      "spent" : 0.0,
+      "deposited" : 145.0
+    }, {
+      "username" : "Ellis DDS Alexander",
+      "spent" : 0.0,
+      "deposited" : 144.0
+    }, {
+      "username" : "Vallee Genevieve",
+      "spent" : 0.0,
+      "deposited" : 146.0
+    } ],
+    "employees" : [ {
+      "username" : "Lee Joe",
+      "spent" : 0.0,
+      "deposited" : 163.0
+    }, {
+      "username" : "Albu Dida",
+      "spent" : 0.0,
+      "deposited" : 40.0
+    }, {
+      "username" : "Marin Silvia",
+      "spent" : 0.0,
+      "deposited" : 84.0
+    }, {
+      "username" : "Poulain Gilbert",
+      "spent" : 0.0,
+      "deposited" : 281.0
+    }, {
+      "username" : "Booker James",
+      "spent" : 0.0,
+      "deposited" : 132.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 1135.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 430,
+  "output" : {
+    "IBAN" : "RO32POOB0130532963818359",
+    "balance" : 1024.0,
+    "currency" : "USD",
+    "spending limit" : 94.0,
+    "deposit limit" : 107.14285714285714,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Mocanu Mirela",
+      "spent" : 0.0,
+      "deposited" : 200.0
+    }, {
+      "username" : "Poulain Gilbert",
+      "spent" : 0.0,
+      "deposited" : 165.0
+    }, {
+      "username" : "Booker James",
+      "spent" : 0.0,
+      "deposited" : 167.0
+    }, {
+      "username" : "Ellis DDS Alexander",
+      "spent" : 0.0,
+      "deposited" : 152.0
+    } ],
+    "employees" : [ {
+      "username" : "Vallee Genevieve",
+      "spent" : 0.0,
+      "deposited" : 301.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 985.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 431,
+  "output" : {
+    "IBAN" : "RO68POOB1848616931405475",
+    "balance" : 859.0,
+    "currency" : "RON",
+    "spending limit" : 473.0,
+    "deposit limit" : 500.0,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Mocanu Mirela",
+      "spent" : 0.0,
+      "deposited" : 110.0
+    } ],
+    "employees" : [ {
+      "username" : "Poulain Gilbert",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Booker James",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Ellis DDS Alexander",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Vallee Genevieve",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 110.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 432,
+  "output" : {
+    "IBAN" : "RO10POOB4354933866366881",
+    "balance" : 1117.0,
+    "currency" : "RON",
+    "spending limit" : 500.0,
+    "deposit limit" : 500.0,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Mocanu Mirela",
+      "spent" : 0.0,
+      "deposited" : 116.0
+    }, {
+      "username" : "Poulain Gilbert",
+      "spent" : 0.0,
+      "deposited" : 124.0
+    }, {
+      "username" : "Ellis DDS Alexander",
+      "spent" : 0.0,
+      "deposited" : 136.0
+    } ],
+    "employees" : [ {
+      "username" : "Booker James",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Vallee Genevieve",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 376.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 435,
+  "output" : {
+    "IBAN" : "RO98POOB8412955460158769",
+    "balance" : 1282.27,
+    "currency" : "USD",
+    "spending limit" : 868.0,
+    "deposit limit" : 107.14285714285714,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 436,
+  "output" : {
+    "IBAN" : "RO32POOB0130532963818359",
+    "balance" : 1024.0,
+    "currency" : "USD",
+    "spending limit" : 94.0,
+    "deposit limit" : 107.14285714285714,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 437,
+  "output" : {
+    "IBAN" : "RO68POOB1848616931405475",
+    "balance" : 859.0,
+    "currency" : "RON",
+    "spending limit" : 473.0,
+    "deposit limit" : 500.0,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 438,
+  "output" : {
+    "IBAN" : "RO10POOB4354933866366881",
+    "balance" : 1117.0,
+    "currency" : "RON",
+    "spending limit" : 500.0,
+    "deposit limit" : 500.0,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 } ]

@@ -283,7 +283,12 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "changeSpendingLimit",
+  "timestamp" : 350,
+  "output" : {
+    "description" : "This is not a business account",
+    "timestamp" : 350
+  }
 }, {
   "command" : "cashWithdrawal",
   "timestamp" : 355,
@@ -425,13 +430,32 @@
     "timestamp" : 389
   }
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 398,
+  "output" : {
+    "IBAN" : "RO53POOB7122855990652257",
+    "balance" : 443.0,
+    "currency" : "EUR",
+    "spending limit" : 100.00000000000001,
+    "deposit limit" : 100.00000000000001,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Zavala Donna",
+      "spent" : 0.0,
+      "deposited" : 122.0
+    }, {
+      "username" : "Turnbull Ruth",
+      "spent" : 0.0,
+      "deposited" : 148.0
+    }, {
+      "username" : "Tapia Vinicio",
+      "spent" : 0.0,
+      "deposited" : 173.0
+    } ],
+    "employees" : [ ],
+    "total spent" : 0.0,
+    "total deposited" : 443.0
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 403,
@@ -751,19 +775,12 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
+  "command" : "changeSpendingLimit",
+  "timestamp" : 436,
+  "output" : {
+    "description" : "You must be owner in order to change spending limit.",
+    "timestamp" : 436
+  }
 }, {
   "command" : "cashWithdrawal",
   "timestamp" : 439,
@@ -793,7 +810,17 @@
     "timestamp" : 446
   }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 447,
+  "output" : {
+    "IBAN" : "RO53POOB7122855990652257",
+    "balance" : 1297.0,
+    "currency" : "EUR",
+    "spending limit" : 357.0,
+    "deposit limit" : 100.00000000000001,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 }, {
   "command" : "printUsers",
   "timestamp" : 448,
@@ -3521,121 +3548,6 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "error" : "Invalid command"
-}, {
-  "command" : "payOnline",
-  "timestamp" : 543,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 543
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 545,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 545
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 549,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 549
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 551,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 551
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 555,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 555
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 557,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 557
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 559,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 559
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 563,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 563
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 565,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 565
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 569,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 569
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 571,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 571
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 573,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 573
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 575,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 575
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 579,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 579
-  }
-}, {
-  "command" : "payOnline",
-  "timestamp" : 581,
-  "output" : {
-    "description" : "Card not found",
-    "timestamp" : 581
-  }
-}, {
   "command" : "printUsers",
   "timestamp" : 600,
   "output" : [ {
@@ -3701,7 +3613,7 @@
       } ]
     }, {
       "IBAN" : "RO53POOB7122855990652257",
-      "balance" : 289.4433354999998,
+      "balance" : 2.079946052596939,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -4013,7 +3925,17 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 601,
+  "output" : {
+    "IBAN" : "RO75POOB8279679254660818",
+    "balance" : 17247.0,
+    "currency" : "NZD",
+    "spending limit" : 177.7777777777778,
+    "deposit limit" : 177.7777777777778,
+    "statistics type" : "commerciant",
+    "commerciants" : [ ]
+  }
 }, {
   "command" : "payOnline",
   "timestamp" : 606,
@@ -4122,7 +4044,7 @@
       } ]
     }, {
       "IBAN" : "RO53POOB7122855990652257",
-      "balance" : 289.4433354999998,
+      "balance" : 2.079946052596939,
       "currency" : "EUR",
       "type" : "business",
       "cards" : [ {
@@ -4479,7 +4401,81 @@
     } ]
   } ]
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 630,
+  "output" : {
+    "IBAN" : "RO53POOB7122855990652257",
+    "balance" : 2.079946052596939,
+    "currency" : "EUR",
+    "spending limit" : 357.0,
+    "deposit limit" : 100.00000000000001,
+    "statistics type" : "transaction",
+    "managers" : [ {
+      "username" : "Zavala Donna",
+      "spent" : 0.0,
+      "deposited" : 303.0
+    }, {
+      "username" : "Turnbull Ruth",
+      "spent" : 0.0,
+      "deposited" : 274.0
+    }, {
+      "username" : "Tapia Vinicio",
+      "spent" : 0.0,
+      "deposited" : 322.0
+    } ],
+    "employees" : [ {
+      "username" : "Johnson MD Anthony",
+      "spent" : 43.45515000000001,
+      "deposited" : 0.0
+    }, {
+      "username" : "del Andres Lisandro",
+      "spent" : 13.27757142857143,
+      "deposited" : 0.0
+    }, {
+      "username" : "van de Veen-Verhoeven Nick",
+      "spent" : 5.112,
+      "deposited" : 0.0
+    }, {
+      "username" : "Picard Alain",
+      "spent" : 226.4105454545455,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 288.255266883117,
+    "total deposited" : 899.0
+  }
 }, {
-  "error" : "Invalid command"
+  "command" : "businessReport",
+  "timestamp" : 631,
+  "output" : {
+    "IBAN" : "RO75POOB8279679254660818",
+    "balance" : 17247.0,
+    "currency" : "NZD",
+    "spending limit" : 177.7777777777778,
+    "deposit limit" : 177.7777777777778,
+    "statistics type" : "transaction",
+    "managers" : [ ],
+    "employees" : [ {
+      "username" : "Zavala Donna",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Ardelean Eusebiu",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Tapia Vinicio",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Picard Alain",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    }, {
+      "username" : "Mazilescu Simion",
+      "spent" : 0.0,
+      "deposited" : 0.0
+    } ],
+    "total spent" : 0.0,
+    "total deposited" : 0.0
+  }
 } ]

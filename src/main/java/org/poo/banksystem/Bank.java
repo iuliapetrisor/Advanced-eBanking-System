@@ -26,6 +26,10 @@ import org.poo.commands.AcceptSplitPayment;
 import org.poo.commands.RejectSplitPayment;
 import org.poo.commands.UpgradePlan;
 import org.poo.commands.CashWithdrawal;
+import org.poo.commands.AddNewBusinessAssociate;
+import org.poo.commands.ChangeDepositLimit;
+import org.poo.commands.ChangeSpendingLimit;
+import org.poo.commands.BusinessReport;
 import org.poo.fileio.CommerciantInput;
 import org.poo.transactions.TransactionManager;
 import org.poo.fileio.CommandInput;
@@ -64,6 +68,10 @@ public class Bank {
     private CashWithdrawal cashWithdrawal;
     private AcceptSplitPayment acceptSplitPayment;
     private RejectSplitPayment rejectSplitPayment;
+    private AddNewBusinessAssociate addNewBusinessAssociate;
+    private ChangeDepositLimit changeDepositLimit;
+    private ChangeSpendingLimit changeSpendingLimit;
+    private BusinessReport businessReport;
 
     /**
      * Constructor for the Bank class.
@@ -90,7 +98,7 @@ public class Bank {
      */
     private void initializeCommands() {
         printUsers = new PrintUsers(users);
-        addAccount = new AddAccount(users, transactionManager);
+        addAccount = new AddAccount(users, exchangeRateManager, transactionManager);
         createCard = new CreateCard(users, transactionManager);
         addFunds = new AddFunds(users);
         deleteAccount = new DeleteAccount(users, transactionManager);
@@ -112,6 +120,10 @@ public class Bank {
         cashWithdrawal = new CashWithdrawal(users, exchangeRateManager, transactionManager);
         acceptSplitPayment = new AcceptSplitPayment(users, exchangeRateManager, transactionManager);
         rejectSplitPayment = new RejectSplitPayment(users, transactionManager);
+        addNewBusinessAssociate = new AddNewBusinessAssociate(users);
+        changeDepositLimit = new ChangeDepositLimit(users);
+        changeSpendingLimit = new ChangeSpendingLimit(users);
+        businessReport = new BusinessReport(users);
     }
 
     /**
@@ -196,6 +208,18 @@ public class Bank {
                     break;
                 case "rejectSplitPayment":
                     rejectSplitPayment.execute(command, objectMapper, output);
+                    break;
+                case "addNewBusinessAssociate":
+                    addNewBusinessAssociate.execute(command, objectMapper, output);
+                    break;
+                case "changeDepositLimit":
+                    changeDepositLimit.execute(command, objectMapper, output);
+                    break;
+                case "changeSpendingLimit":
+                    changeSpendingLimit.execute(command, objectMapper, output);
+                    break;
+                case "businessReport":
+                    businessReport.execute(command, objectMapper, output);
                     break;
                 default:
                     ObjectNode outputNode = objectMapper.createObjectNode();
